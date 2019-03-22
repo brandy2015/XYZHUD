@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "XYZHUD"
-  s.version      = "0.0.1"
+  s.version      = "0.0.2"
   s.summary      = "持续升级"
 
   # This description is used to generate tags and improve search results.
@@ -57,13 +57,19 @@ Pod::Spec.new do |s|
 
   s.authors            = { "Brandy" => "zhangqianbrandy2012@gmail.com" }
   s.platform     = :ios, "10.1"
-  s.source       = { :git => "https://github.com/brandy2015/XYZHUD.git", :tag => "0.0.1"}
-  s.source_files = "XYZHUD/Source/*"
+  s.source       = { :git => "https://github.com/brandy2015/XYZHUD.git", :tag => "0.0.2"}
+  s.source_files = "XYZHUD/Source/**/*"
+
+#"XYZHUD/Source/*","XYZHUD/Source/PopupWindow/*","XYZHUD/PopupWindow/Extensions/*","XYZHUD/Source/Custom/*","XYZHUD/Source/Custom/**/*"
+#"XYZHUD/**/*.{h,m}
+#s.resources = "ADVProgressBar/Resources/*.png"
 
 
-    s.dependency 'MBProgressHUD','SoHow','XYZColor','AsyncSwift','Localize-Swift'
-
-
+    s.dependency 'MBProgressHUD'
+    s.dependency 'SoHow'
+    s.dependency 'XYZColor'
+    s.dependency 'AsyncSwift'
+    s.dependency 'Localize-Swift'
 
   # s.social_media_url   = "http://twitter.com/Brandy"
 
@@ -155,7 +161,7 @@ end
 
 #Pod::Spec.new do |s|
 #s.name         = "ZYRunTimeCoT"
-#s.version      = "0.0.1"
+#s.version      = "0.0.2"
 #s.ios.deployment_target = '8.0'
 #s.summary      = "简介"
 #s.homepage     = "https://github.com/zhangyqyx/ZYRunTimeCoT"

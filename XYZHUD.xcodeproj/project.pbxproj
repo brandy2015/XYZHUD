@@ -119,11 +119,10 @@
 				D6CF9CFE22446C2500474876 /* AppDelegate.swift */,
 				D6CF9D0022446C2500474876 /* ViewController.swift */,
 				D6CF9D0222446C2500474876 /* Main.storyboard */,
-				D6CF9D6622446CCF00474876 /* XYZHUD.swift */,
 				D6CF9D3B22446CB700474876 /* Source */,
 				D6CF9D0522446C2600474876 /* Assets.xcassets */,
-				D6CF9D0722446C2600474876 /* LaunchScreen.storyboard */,
 				D6CF9D0A22446C2600474876 /* Info.plist */,
+				D6CF9D0722446C2600474876 /* LaunchScreen.storyboard */,
 			);
 			path = XYZHUD;
 			sourceTree = "<group>";
@@ -131,6 +130,7 @@
 		D6CF9D3B22446CB700474876 /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				D6CF9D6622446CCF00474876 /* XYZHUD.swift */,
 				D6CF9D3C22446CB700474876 /* PopupWindow */,
 				D6CF9D4A22446CB700474876 /* Custom */,
 			);
@@ -516,7 +516,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = E5VG453CHM;
-				INFOPLIST_FILE = XYZHUD/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/XYZHUD/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -535,7 +535,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = E5VG453CHM;
-				INFOPLIST_FILE = XYZHUD/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/XYZHUD/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
