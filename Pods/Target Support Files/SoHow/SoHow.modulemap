@@ -1,0 +1,6 @@
+framework module SoHow {
+  umbrella header "SoHow-umbrella.h"
+
+  export *
+  module * { export * }
+}

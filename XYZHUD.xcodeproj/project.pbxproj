@@ -7,14 +7,38 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5E20555319259E8153C1358E /* Pods_XYZHUD.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC9ACD727EE71B325DE3390E /* Pods_XYZHUD.framework */; };
 		D6CF9CFF22446C2500474876 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6CF9CFE22446C2500474876 /* AppDelegate.swift */; };
 		D6CF9D0122446C2500474876 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6CF9D0022446C2500474876 /* ViewController.swift */; };
 		D6CF9D0422446C2500474876 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D6CF9D0222446C2500474876 /* Main.storyboard */; };
 		D6CF9D0622446C2600474876 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D6CF9D0522446C2600474876 /* Assets.xcassets */; };
 		D6CF9D0922446C2600474876 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D6CF9D0722446C2600474876 /* LaunchScreen.storyboard */; };
+		D6CF9D5522446CB700474876 /* PopupViewContainable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6CF9D3D22446CB700474876 /* PopupViewContainable.swift */; };
+		D6CF9D5622446CB700474876 /* ViewType.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6CF9D3E22446CB700474876 /* ViewType.swift */; };
+		D6CF9D5722446CB700474876 /* BasePopupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6CF9D3F22446CB700474876 /* BasePopupViewController.swift */; };
+		D6CF9D5822446CB700474876 /* ShapeType.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6CF9D4022446CB700474876 /* ShapeType.swift */; };
+		D6CF9D5922446CB700474876 /* PopupWindowManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6CF9D4122446CB700474876 /* PopupWindowManager.swift */; };
+		D6CF9D5A22446CB700474876 /* PopupContainerWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6CF9D4222446CB700474876 /* PopupContainerWindow.swift */; };
+		D6CF9D5B22446CB700474876 /* CGRect+Inset.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6CF9D4422446CB700474876 /* CGRect+Inset.swift */; };
+		D6CF9D5C22446CB700474876 /* UIView+Shape.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6CF9D4522446CB700474876 /* UIView+Shape.swift */; };
+		D6CF9D5D22446CB700474876 /* PopupViewDirection.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6CF9D4722446CB700474876 /* PopupViewDirection.swift */; };
+		D6CF9D5E22446CB700474876 /* PopupItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6CF9D4822446CB700474876 /* PopupItem.swift */; };
+		D6CF9D5F22446CB700474876 /* PopupContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6CF9D4922446CB700474876 /* PopupContainerView.swift */; };
+		D6CF9D6022446CB700474876 /* DemoPopupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6CF9D4C22446CB700474876 /* DemoPopupView.swift */; };
+		D6CF9D6122446CB700474876 /* DemoPopupView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D6CF9D4D22446CB700474876 /* DemoPopupView.xib */; };
+		D6CF9D6222446CB700474876 /* CustomPopupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6CF9D4E22446CB700474876 /* CustomPopupViewController.swift */; };
+		D6CF9D6322446CB700474876 /* Nibable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6CF9D4F22446CB700474876 /* Nibable.swift */; };
+		D6CF9D6422446CB700474876 /* UIColor+Background.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6CF9D5122446CB700474876 /* UIColor+Background.swift */; };
+		D6CF9D6522446CB700474876 /* UIView+Shadow.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6CF9D5222446CB700474876 /* UIView+Shadow.swift */; };
+		D6CF9D6722446CCF00474876 /* XYZHUD.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6CF9D6622446CCF00474876 /* XYZHUD.swift */; };
+		D6CF9D692244718000474876 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = D6CF9D682244718000474876 /* LICENSE */; };
+		D6CF9D6B2244718500474876 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = D6CF9D6A2244718500474876 /* README.md */; };
+		D6CF9D6D224471B500474876 /* XYZHUD.podspec in Resources */ = {isa = PBXBuildFile; fileRef = D6CF9D6C224471B400474876 /* XYZHUD.podspec */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A3B6A6C6BEC48A553671BD5C /* Pods-XYZHUD.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XYZHUD.release.xcconfig"; path = "Target Support Files/Pods-XYZHUD/Pods-XYZHUD.release.xcconfig"; sourceTree = "<group>"; };
+		CBBC9BD9C4C006887EE2EA97 /* Pods-XYZHUD.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XYZHUD.debug.xcconfig"; path = "Target Support Files/Pods-XYZHUD/Pods-XYZHUD.debug.xcconfig"; sourceTree = "<group>"; };
 		D6CF9CFB22446C2500474876 /* XYZHUD.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XYZHUD.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D6CF9CFE22446C2500474876 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D6CF9D0022446C2500474876 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +46,29 @@
 		D6CF9D0522446C2600474876 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D6CF9D0822446C2600474876 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D6CF9D0A22446C2600474876 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D6CF9D3D22446CB700474876 /* PopupViewContainable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopupViewContainable.swift; sourceTree = "<group>"; };
+		D6CF9D3E22446CB700474876 /* ViewType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewType.swift; sourceTree = "<group>"; };
+		D6CF9D3F22446CB700474876 /* BasePopupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BasePopupViewController.swift; sourceTree = "<group>"; };
+		D6CF9D4022446CB700474876 /* ShapeType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShapeType.swift; sourceTree = "<group>"; };
+		D6CF9D4122446CB700474876 /* PopupWindowManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopupWindowManager.swift; sourceTree = "<group>"; };
+		D6CF9D4222446CB700474876 /* PopupContainerWindow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopupContainerWindow.swift; sourceTree = "<group>"; };
+		D6CF9D4422446CB700474876 /* CGRect+Inset.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CGRect+Inset.swift"; sourceTree = "<group>"; };
+		D6CF9D4522446CB700474876 /* UIView+Shape.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Shape.swift"; sourceTree = "<group>"; };
+		D6CF9D4622446CB700474876 /* PopupWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PopupWindow.h; sourceTree = "<group>"; };
+		D6CF9D4722446CB700474876 /* PopupViewDirection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopupViewDirection.swift; sourceTree = "<group>"; };
+		D6CF9D4822446CB700474876 /* PopupItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopupItem.swift; sourceTree = "<group>"; };
+		D6CF9D4922446CB700474876 /* PopupContainerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopupContainerView.swift; sourceTree = "<group>"; };
+		D6CF9D4C22446CB700474876 /* DemoPopupView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DemoPopupView.swift; sourceTree = "<group>"; };
+		D6CF9D4D22446CB700474876 /* DemoPopupView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DemoPopupView.xib; sourceTree = "<group>"; };
+		D6CF9D4E22446CB700474876 /* CustomPopupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomPopupViewController.swift; sourceTree = "<group>"; };
+		D6CF9D4F22446CB700474876 /* Nibable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Nibable.swift; sourceTree = "<group>"; };
+		D6CF9D5122446CB700474876 /* UIColor+Background.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Background.swift"; sourceTree = "<group>"; };
+		D6CF9D5222446CB700474876 /* UIView+Shadow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Shadow.swift"; sourceTree = "<group>"; };
+		D6CF9D6622446CCF00474876 /* XYZHUD.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XYZHUD.swift; sourceTree = "<group>"; };
+		D6CF9D682244718000474876 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		D6CF9D6A2244718500474876 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		D6CF9D6C224471B400474876 /* XYZHUD.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = XYZHUD.podspec; sourceTree = "<group>"; };
+		FC9ACD727EE71B325DE3390E /* Pods_XYZHUD.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_XYZHUD.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +76,32 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5E20555319259E8153C1358E /* Pods_XYZHUD.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AD8EBA337359CE4DD6C92AC3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CBBC9BD9C4C006887EE2EA97 /* Pods-XYZHUD.debug.xcconfig */,
+				A3B6A6C6BEC48A553671BD5C /* Pods-XYZHUD.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		D6CF9CF222446C2500474876 = {
 			isa = PBXGroup;
 			children = (
+				D6CF9D6A2244718500474876 /* README.md */,
+				D6CF9D682244718000474876 /* LICENSE */,
+				D6CF9D6C224471B400474876 /* XYZHUD.podspec */,
 				D6CF9CFD22446C2500474876 /* XYZHUD */,
 				D6CF9CFC22446C2500474876 /* Products */,
+				AD8EBA337359CE4DD6C92AC3 /* Pods */,
+				E841D467008527B4655815A0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -57,11 +119,102 @@
 				D6CF9CFE22446C2500474876 /* AppDelegate.swift */,
 				D6CF9D0022446C2500474876 /* ViewController.swift */,
 				D6CF9D0222446C2500474876 /* Main.storyboard */,
+				D6CF9D6622446CCF00474876 /* XYZHUD.swift */,
+				D6CF9D3B22446CB700474876 /* Source */,
 				D6CF9D0522446C2600474876 /* Assets.xcassets */,
 				D6CF9D0722446C2600474876 /* LaunchScreen.storyboard */,
 				D6CF9D0A22446C2600474876 /* Info.plist */,
 			);
 			path = XYZHUD;
+			sourceTree = "<group>";
+		};
+		D6CF9D3B22446CB700474876 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				D6CF9D3C22446CB700474876 /* PopupWindow */,
+				D6CF9D4A22446CB700474876 /* Custom */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		D6CF9D3C22446CB700474876 /* PopupWindow */ = {
+			isa = PBXGroup;
+			children = (
+				D6CF9D3D22446CB700474876 /* PopupViewContainable.swift */,
+				D6CF9D3E22446CB700474876 /* ViewType.swift */,
+				D6CF9D3F22446CB700474876 /* BasePopupViewController.swift */,
+				D6CF9D4022446CB700474876 /* ShapeType.swift */,
+				D6CF9D4122446CB700474876 /* PopupWindowManager.swift */,
+				D6CF9D4222446CB700474876 /* PopupContainerWindow.swift */,
+				D6CF9D4322446CB700474876 /* Extensions */,
+				D6CF9D4622446CB700474876 /* PopupWindow.h */,
+				D6CF9D4722446CB700474876 /* PopupViewDirection.swift */,
+				D6CF9D4822446CB700474876 /* PopupItem.swift */,
+				D6CF9D4922446CB700474876 /* PopupContainerView.swift */,
+			);
+			path = PopupWindow;
+			sourceTree = "<group>";
+		};
+		D6CF9D4322446CB700474876 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				D6CF9D4422446CB700474876 /* CGRect+Inset.swift */,
+				D6CF9D4522446CB700474876 /* UIView+Shape.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		D6CF9D4A22446CB700474876 /* Custom */ = {
+			isa = PBXGroup;
+			children = (
+				D6CF9D4B22446CB700474876 /* Popup */,
+				D6CF9D5022446CB700474876 /* Extension */,
+				D6CF9D5322446CB700474876 /* Toast */,
+				D6CF9D5422446CB700474876 /* Login */,
+			);
+			path = Custom;
+			sourceTree = "<group>";
+		};
+		D6CF9D4B22446CB700474876 /* Popup */ = {
+			isa = PBXGroup;
+			children = (
+				D6CF9D4C22446CB700474876 /* DemoPopupView.swift */,
+				D6CF9D4D22446CB700474876 /* DemoPopupView.xib */,
+				D6CF9D4E22446CB700474876 /* CustomPopupViewController.swift */,
+				D6CF9D4F22446CB700474876 /* Nibable.swift */,
+			);
+			path = Popup;
+			sourceTree = "<group>";
+		};
+		D6CF9D5022446CB700474876 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				D6CF9D5122446CB700474876 /* UIColor+Background.swift */,
+				D6CF9D5222446CB700474876 /* UIView+Shadow.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		D6CF9D5322446CB700474876 /* Toast */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Toast;
+			sourceTree = "<group>";
+		};
+		D6CF9D5422446CB700474876 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		E841D467008527B4655815A0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FC9ACD727EE71B325DE3390E /* Pods_XYZHUD.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +224,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D6CF9D0D22446C2600474876 /* Build configuration list for PBXNativeTarget "XYZHUD" */;
 			buildPhases = (
+				707472E28050150E18964499 /* [CP] Check Pods Manifest.lock */,
 				D6CF9CF722446C2500474876 /* Sources */,
 				D6CF9CF822446C2500474876 /* Frameworks */,
 				D6CF9CF922446C2500474876 /* Resources */,
+				A69A4023719B9F28CEE5E9BF /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -122,21 +277,97 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D6CF9D6B2244718500474876 /* README.md in Resources */,
 				D6CF9D0922446C2600474876 /* LaunchScreen.storyboard in Resources */,
 				D6CF9D0622446C2600474876 /* Assets.xcassets in Resources */,
+				D6CF9D6D224471B500474876 /* XYZHUD.podspec in Resources */,
+				D6CF9D6122446CB700474876 /* DemoPopupView.xib in Resources */,
 				D6CF9D0422446C2500474876 /* Main.storyboard in Resources */,
+				D6CF9D692244718000474876 /* LICENSE in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		707472E28050150E18964499 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-XYZHUD-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A69A4023719B9F28CEE5E9BF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-XYZHUD/Pods-XYZHUD-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AsyncSwift/Async.framework",
+				"${BUILT_PRODUCTS_DIR}/Localize-Swift/Localize_Swift.framework",
+				"${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/SoHow/SoHow.framework",
+				"${BUILT_PRODUCTS_DIR}/XYZColor/XYZColor.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Async.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Localize_Swift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MBProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SoHow.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/XYZColor.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-XYZHUD/Pods-XYZHUD-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		D6CF9CF722446C2500474876 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D6CF9D6222446CB700474876 /* CustomPopupViewController.swift in Sources */,
 				D6CF9D0122446C2500474876 /* ViewController.swift in Sources */,
+				D6CF9D5822446CB700474876 /* ShapeType.swift in Sources */,
+				D6CF9D5922446CB700474876 /* PopupWindowManager.swift in Sources */,
 				D6CF9CFF22446C2500474876 /* AppDelegate.swift in Sources */,
+				D6CF9D6422446CB700474876 /* UIColor+Background.swift in Sources */,
+				D6CF9D6322446CB700474876 /* Nibable.swift in Sources */,
+				D6CF9D5C22446CB700474876 /* UIView+Shape.swift in Sources */,
+				D6CF9D5F22446CB700474876 /* PopupContainerView.swift in Sources */,
+				D6CF9D5B22446CB700474876 /* CGRect+Inset.swift in Sources */,
+				D6CF9D5A22446CB700474876 /* PopupContainerWindow.swift in Sources */,
+				D6CF9D6022446CB700474876 /* DemoPopupView.swift in Sources */,
+				D6CF9D5622446CB700474876 /* ViewType.swift in Sources */,
+				D6CF9D5522446CB700474876 /* PopupViewContainable.swift in Sources */,
+				D6CF9D5E22446CB700474876 /* PopupItem.swift in Sources */,
+				D6CF9D6722446CCF00474876 /* XYZHUD.swift in Sources */,
+				D6CF9D5D22446CB700474876 /* PopupViewDirection.swift in Sources */,
+				D6CF9D6522446CB700474876 /* UIView+Shadow.swift in Sources */,
+				D6CF9D5722446CB700474876 /* BasePopupViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,6 +511,7 @@
 		};
 		D6CF9D0E22446C2600474876 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CBBC9BD9C4C006887EE2EA97 /* Pods-XYZHUD.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -298,6 +530,7 @@
 		};
 		D6CF9D0F22446C2600474876 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A3B6A6C6BEC48A553671BD5C /* Pods-XYZHUD.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
