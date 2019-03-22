@@ -19,7 +19,10 @@ extension Nibable where Self: UIView {
     }
 
     static func nib() -> UINib {
-        return UINib(nibName: nibName, bundle: nil)
+        
+        
+        
+        return UINib(nibName: nibName, bundle: Bundle(for: self.classForCoder()))
     }
 
     static func view() -> Self {
