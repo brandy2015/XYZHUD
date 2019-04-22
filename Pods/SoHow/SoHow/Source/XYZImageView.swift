@@ -21,7 +21,7 @@ public class XYZImage: NSObject {
 
 
 public extension UIImageView{
-    public func ToCircle()   {
+    func ToCircle()   {
         self.layer.masksToBounds = true
         self.layer.cornerRadius =  self.bounds.width/2
     }
@@ -29,7 +29,7 @@ public extension UIImageView{
 }
 //圆角
 public extension UIView{
-    public func CornerRadius(cornerRadius:CGFloat = 20) {
+    func CornerRadius(cornerRadius:CGFloat = 20) {
         self.layer.masksToBounds = true
         self.layer.cornerRadius = cornerRadius
     }
@@ -54,31 +54,31 @@ public func y压缩imageCompress(originalImage: UIImage,压缩比:CGFloat = 0.5)
 
 
 
-
-public extension UIView{
-    public var width :CGFloat { return self.frame.width  }
-    public var height:CGFloat { return self.frame.height }
-    
-    public func widthX(_ separateBy:Double) -> CGFloat {
-        return self.frame.width * CGFloat(separateBy)
-    }
-    public func height(_ separateBy:Double) -> CGFloat {
-        return self.frame.height * CGFloat(separateBy)
-    }
-    public func addShadow(backgroundColor:UIColor = UIColor.white){
-        self.backgroundColor = backgroundColor
-        self.layer.shadowOffset = CGSize(width: 0, height: 2)
-        self.layer.shadowRadius = 2
-        self.layer.shadowColor = UIColor.black.cgColor
-        self.layer.shadowOpacity = 0.5
-    }
-    public func addImage(UIImageX:UIImage?){
-        let RectX = CGRect(x: 0, y: 0, width: self.width, height: self.height)
-        let x = UIImageView(frame: RectX)
-        x.image = UIImageX
-        self.addSubview(x)
-    }
-}
+//
+//public extension UIView{
+//    public var width :CGFloat { return self.frame.width  }
+//    public var height:CGFloat { return self.frame.height }
+//    
+//    public func widthX(_ separateBy:Double) -> CGFloat {
+//        return self.frame.width * CGFloat(separateBy)
+//    }
+//    public func height(_ separateBy:Double) -> CGFloat {
+//        return self.frame.height * CGFloat(separateBy)
+//    }
+//    public func addShadow(backgroundColor:UIColor = UIColor.white){
+//        self.backgroundColor = backgroundColor
+//        self.layer.shadowOffset = CGSize(width: 0, height: 2)
+//        self.layer.shadowRadius = 2
+//        self.layer.shadowColor = UIColor.black.cgColor
+//        self.layer.shadowOpacity = 0.5
+//    }
+//    public func addImage(UIImageX:UIImage?){
+//        let RectX = CGRect(x: 0, y: 0, width: self.width, height: self.height)
+//        let x = UIImageView(frame: RectX)
+//        x.image = UIImageX
+//        self.addSubview(x)
+//    }
+//}
 
 
 public func d读取图片地址(图片名字:String) -> String  {  //未真正启用

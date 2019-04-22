@@ -2,9 +2,9 @@ PODS:
   - AsyncSwift (2.0.4)
   - Localize-Swift (2.0.0)
   - MBProgressHUD (1.1.0)
-  - SoHow (1.3.6):
+  - SoHow (2.0.0):
     - MBProgressHUD
-  - XYZColor (0.2.5)
+  - XYZColor (1.0.0)
 
 DEPENDENCIES:
   - AsyncSwift
@@ -24,9 +24,9 @@ SPEC CHECKSUMS:
   AsyncSwift: 65775a7b32e740609b24969ece3de58723b9dc3e
   Localize-Swift: c798ec9286494866f7068f85f7c71283ac5bdab4
   MBProgressHUD: e7baa36a220447d8aeb12769bf0585582f3866d9
-  SoHow: 1cfedda0fe5a2582b9d2305d4cc4676ac60a3e4d
-  XYZColor: bed62343df6ee78ac7805094f9d5afa2c74b11bc
+  SoHow: 3f70beb9901fba59df0f3c95bd8a114d229afeeb
+  XYZColor: 45dbb907ad2ab586fb296db0931201bae40fdc0e
 
 PODFILE CHECKSUM: c7540ac8b8070bc13b071f27e31963cc702b12d8
 
-COCOAPODS: 1.6.1
+COCOAPODS: 1.7.0.beta.3

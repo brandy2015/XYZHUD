@@ -22,30 +22,30 @@ public class XYZColor: NSObject {
 
 
 public extension UIColor{
-    public class var Succeeded: UIColor {
+       class var Succeeded: UIColor {
         return UIColor(red: 73/255, green: 210/255, blue: 67/255, alpha:0.5)
     }
-    public class var Failed: UIColor {
+       class var Failed: UIColor {
         return UIColor(red: 238/255, green: 48/255, blue: 7/255, alpha:0.5)
     }
-    public class var Converting: UIColor {
+       class var Converting: UIColor {
         return UIColor(red: 126/255, green: 219/255, blue: 212/255, alpha:0.5)
     }
-    public class var WeiBo: UIColor {
+       class var WeiBo: UIColor {
         return UIColor(red: 247/255, green: 148/255, blue: 34/255, alpha:0.8)
     }
-    public class var WeChat: UIColor {
+       class var WeChat: UIColor {
         return UIColor(red: 13/255, green: 190/255, blue: 38/255, alpha:0.8)
     }
-    public class var GIFOut: UIColor {
+       class var GIFOut: UIColor {
         return UIColor(red: 0/255, green: 0/255, blue: 0/255, alpha:0.8)
     }
-    public class var GIFSize: UIColor {
+       class var GIFSize: UIColor {
         return UIColor(red: 247/255, green: 200/255, blue: 96/255, alpha:0.8)
     }
 }
 public extension UIColor{
-    public struct xyzcolor {
+     struct xyzcolor {
         struct Netflix {
             public static let light = UIColor(rgb: 0x485563)
             public static let dark = UIColor(rgb: 0x29323c)
@@ -62,7 +62,7 @@ public class SelfColor_Extension: NSObject {
 
 
 public extension UIColor {
-    public static func by(r: Int, g: Int, b: Int, a: CGFloat = 1) -> UIColor {
+       static func by(r: Int, g: Int, b: Int, a: CGFloat = 1) -> UIColor {
         let d = CGFloat(255)
         return UIColor(red: CGFloat(r) / d, green: CGFloat(g) / d, blue: CGFloat(b) / d, alpha: a)
     }
@@ -83,19 +83,19 @@ public extension UIColor {
         )
     }
     
-    public static let darkDefault = UIColor(white: 45.0/255.0, alpha: 1)
-    public static let grayText = UIColor(white: 160.0/255.0, alpha: 1)
-    public static let facebookDarkBlue = UIColor.by(r: 59, g: 89, b: 152)
-    public static let dimmedLightBackground = UIColor(white: 100.0/255.0, alpha: 0.3)
-    public static let dimmedDarkBackground = UIColor(white: 50.0/255.0, alpha: 0.3)
-    public static let pinky = UIColor(rgb: 0xE91E63)
-    public static let amber = UIColor(rgb: 0xFFC107)
-    public static let satCyan = UIColor(rgb: 0x00BCD4)
-    public static let darkText = UIColor(rgb: 0x212121)
-    public static let redish = UIColor(rgb: 0xFF5252)
-    public static let darkSubText = UIColor(rgb: 0x757575)
-    public static let greenGrass = UIColor(rgb: 0x4CAF50)
-    public static let darkChatMessage = UIColor(red: 48, green: 47, blue: 48)
+       static let darkDefault = UIColor(white: 45.0/255.0, alpha: 1)
+       static let grayText = UIColor(white: 160.0/255.0, alpha: 1)
+       static let facebookDarkBlue = UIColor.by(r: 59, g: 89, b: 152)
+       static let dimmedLightBackground = UIColor(white: 100.0/255.0, alpha: 0.3)
+       static let dimmedDarkBackground = UIColor(white: 50.0/255.0, alpha: 0.3)
+       static let pinky = UIColor(rgb: 0xE91E63)
+       static let amber = UIColor(rgb: 0xFFC107)
+       static let satCyan = UIColor(rgb: 0x00BCD4)
+       static let darkText = UIColor(rgb: 0x212121)
+       static let redish = UIColor(rgb: 0xFF5252)
+       static let darkSubText = UIColor(rgb: 0x757575)
+       static let greenGrass = UIColor(rgb: 0x4CAF50)
+       static let darkChatMessage = UIColor(red: 48, green: 47, blue: 48)
 }
 
 public struct EKColor {

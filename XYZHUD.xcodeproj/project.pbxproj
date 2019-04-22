@@ -169,8 +169,6 @@
 			children = (
 				D6CF9D4B22446CB700474876 /* Popup */,
 				D6CF9D5022446CB700474876 /* Extension */,
-				D6CF9D5322446CB700474876 /* Toast */,
-				D6CF9D5422446CB700474876 /* Login */,
 			);
 			path = Custom;
 			sourceTree = "<group>";
@@ -193,20 +191,6 @@
 				D6CF9D5222446CB700474876 /* UIView+Shadow.swift */,
 			);
 			path = Extension;
-			sourceTree = "<group>";
-		};
-		D6CF9D5322446CB700474876 /* Toast */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Toast;
-			sourceTree = "<group>";
-		};
-		D6CF9D5422446CB700474876 /* Login */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Login;
 			sourceTree = "<group>";
 		};
 		E841D467008527B4655815A0 /* Frameworks */ = {
@@ -318,24 +302,11 @@
 			files = (
 			);
 			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-XYZHUD/Pods-XYZHUD-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/AsyncSwift/Async.framework",
-				"${BUILT_PRODUCTS_DIR}/Localize-Swift/Localize_Swift.framework",
-				"${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework",
-				"${BUILT_PRODUCTS_DIR}/SoHow/SoHow.framework",
-				"${BUILT_PRODUCTS_DIR}/XYZColor/XYZColor.framework",
+				"${PODS_ROOT}/Target Support Files/Pods-XYZHUD/Pods-XYZHUD-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-			);
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Async.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Localize_Swift.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MBProgressHUD.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SoHow.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/XYZColor.framework",
+				"${PODS_ROOT}/Target Support Files/Pods-XYZHUD/Pods-XYZHUD-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -523,7 +494,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.zhangqian.XYZHUD;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -542,7 +513,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.zhangqian.XYZHUD;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
