@@ -17,21 +17,14 @@ class DemoPopupView: UIView, PopupViewContainable, Nibable {
         didSet {containerView.layer.masksToBounds = true}
     }
     
-    func ImageInBundle(WithName named:String) -> UIImage {
-        let bundlePath = Bundle(for: self.classForCoder).bundlePath + "/XYZHUDPic.bundle"
-        let bundleXX = Bundle(path: bundlePath)!
-        return UIImage(named: named, in: bundleXX, compatibleWith: nil)!
-    }
     
-    
-
-        
-        
         
     @IBOutlet weak var closeButton: UIButton! {
         didSet {
             closeButton.imageView?.tintColor = .white
-            let closeBTN = ImageInBundle(WithName: "closeBTN")
+            let bundlePath = Bundle(for: self.classForCoder).bundlePath //+ "/XYZHUDPic.bundle"
+            let bundleXX = Bundle(path: bundlePath)!
+            let closeBTN = UIImage(named: "closeBTN", in: bundleXX, compatibleWith: nil)!
             closeButton.setImage(closeBTN, for: .normal)
         }
     }
