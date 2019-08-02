@@ -11,11 +11,33 @@ import SoHow
 import Async
 import Localize_Swift
 import XYZColor
+import MBProgressHUD
+
 
 public var XYZHUD = XYZHUDObject()
 public class XYZHUDObject: NSObject {
 
     public var popedView = CustomPopupViewController()
+    
+    
+    public var MBpopedView = MBProgressHUD()
+    //新加适配的
+    @discardableResult
+    public func 弹出popUPView(延迟时间:Double = 0.5,标题:String = "成功",描述:String = "成功了",颜色:UIColor = UIColor(red: 73/255, green: 210/255, blue: 67/255, alpha:0.5)) -> CustomPopupViewController {
+        let rootViewController = CustomPopupViewController()
+        rootViewController.isTop = true
+        rootViewController.titleString = 标题
+        rootViewController.descriptionString = 描述
+        rootViewController.CustomPopupViewbackgroundColor = 颜色
+        afterDelay(延迟时间) {
+            PopupWindowManager.shared.changeKeyWindow(rootViewController: rootViewController)
+        }
+        return rootViewController
+    }
+    
+    
+    
+    
     @discardableResult
     public func 弹出popUPView(标题:String = "成功",描述:String = "成功了",颜色:UIColor = UIColor(red: 73/255, green: 210/255, blue: 67/255, alpha:0.5)) -> CustomPopupViewController {
         dismiss()

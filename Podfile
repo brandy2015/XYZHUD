@@ -10,6 +10,6 @@ target 'XYZHUD' do
   # Pods for XYZHUD
   pod 'AsyncSwift'
   pod 'Localize-Swift'    #, '~> 2.0'翻译各种语言
-  
-  
+  pod 'XYZResponse'       # 反馈
+  pod 'MBProgressHUD'
 end

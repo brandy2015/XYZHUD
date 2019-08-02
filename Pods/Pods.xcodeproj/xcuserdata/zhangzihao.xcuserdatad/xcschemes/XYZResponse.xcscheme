@@ -14,9 +14,9 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "BB52B7603010062A636E413C5606F70C"
-               BuildableName = "XYZColor.framework"
-               BlueprintName = "XYZColor"
+               BlueprintIdentifier = "51806B9F0AD70010F5670D8F04488569"
+               BuildableName = "XYZResponse.framework"
+               BlueprintName = "XYZResponse"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>

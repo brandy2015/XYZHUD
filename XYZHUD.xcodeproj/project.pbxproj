@@ -3,11 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		5E20555319259E8153C1358E /* Pods_XYZHUD.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC9ACD727EE71B325DE3390E /* Pods_XYZHUD.framework */; };
+		D6855CB622F3F00F004F0DC0 /* XYZHUD_MBProgress.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6855CB522F3F00F004F0DC0 /* XYZHUD_MBProgress.swift */; };
 		D6CF9CFF22446C2500474876 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6CF9CFE22446C2500474876 /* AppDelegate.swift */; };
 		D6CF9D0122446C2500474876 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6CF9D0022446C2500474876 /* ViewController.swift */; };
 		D6CF9D0422446C2500474876 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D6CF9D0222446C2500474876 /* Main.storyboard */; };
@@ -39,6 +40,7 @@
 /* Begin PBXFileReference section */
 		A3B6A6C6BEC48A553671BD5C /* Pods-XYZHUD.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XYZHUD.release.xcconfig"; path = "Target Support Files/Pods-XYZHUD/Pods-XYZHUD.release.xcconfig"; sourceTree = "<group>"; };
 		CBBC9BD9C4C006887EE2EA97 /* Pods-XYZHUD.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XYZHUD.debug.xcconfig"; path = "Target Support Files/Pods-XYZHUD/Pods-XYZHUD.debug.xcconfig"; sourceTree = "<group>"; };
+		D6855CB522F3F00F004F0DC0 /* XYZHUD_MBProgress.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XYZHUD_MBProgress.swift; sourceTree = "<group>"; };
 		D6CF9CFB22446C2500474876 /* XYZHUD.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XYZHUD.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D6CF9CFE22446C2500474876 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D6CF9D0022446C2500474876 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -130,6 +132,7 @@
 		D6CF9D3B22446CB700474876 /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				D6855CB522F3F00F004F0DC0 /* XYZHUD_MBProgress.swift */,
 				D6CF9D6622446CCF00474876 /* XYZHUD.swift */,
 				D6CF9D3C22446CB700474876 /* PopupWindow */,
 				D6CF9D4A22446CB700474876 /* Custom */,
@@ -325,6 +328,7 @@
 				D6CF9D5822446CB700474876 /* ShapeType.swift in Sources */,
 				D6CF9D5922446CB700474876 /* PopupWindowManager.swift in Sources */,
 				D6CF9CFF22446C2500474876 /* AppDelegate.swift in Sources */,
+				D6855CB622F3F00F004F0DC0 /* XYZHUD_MBProgress.swift in Sources */,
 				D6CF9D6422446CB700474876 /* UIColor+Background.swift in Sources */,
 				D6CF9D6322446CB700474876 /* Nibable.swift in Sources */,
 				D6CF9D5C22446CB700474876 /* UIView+Shape.swift in Sources */,

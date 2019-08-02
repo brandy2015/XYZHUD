@@ -59,6 +59,27 @@ public class XYZJump: NSObject {
     }
     
     
+    public func 在AppStore评论(AppURLString:String)  {
+        if let AppURL = URL(string: AppURLString), UIApplication.shared.canOpenURL(AppURL) {
+            UIApplication.shared.open(AppURL, options: [:]) { (succeed) in
+                if succeed{
+                    print("已经打开")
+                }else{
+                    print("打开不开")
+                }
+            }
+            
+            
+        }
+    }
+    
+    
+    
+    
+    //跳转到日历
+    public func Calendar(){saveJump(To: "calshow://")}
+    //跳转到提醒事项
+    public func Reminder(){saveJump(To: "x-apple-reminder://")}
         
 //    public func ()  {saveJump(To: )}
 //    public func ()  {saveJump(To: )}
@@ -79,7 +100,7 @@ public class XYZJump: NSObject {
     
     
     
-    private func saveJump(To code:String) {
+    public func saveJump(To code:String) {
         let x = URL(string: code)!
         print(x)
         UIApplication.shared.open(x, options: Dictionary(), completionHandler: nil)
