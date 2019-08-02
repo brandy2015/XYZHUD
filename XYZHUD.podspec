@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "XYZHUD"
-  s.version      = "1.0.3"
+  s.version      = "1.0.4"
   s.summary      = "持续升级"
 
   # This description is used to generate tags and improve search results.
@@ -61,13 +61,14 @@ Pod::Spec.new do |s|
 
   s.authors            = { "Brandy" => "zhangqianbrandy2012@gmail.com" }
   s.platform     = :ios, "10.1"
-  s.source       = { :git => "https://github.com/brandy2015/XYZHUD.git", :tag => "1.0.3"}
+  s.source       = { :git => "https://github.com/brandy2015/XYZHUD.git", :tag => "1.0.4"}
   s.source_files = "XYZHUD/Source/**/*"
 
 #"XYZHUD/Source/*","XYZHUD/Source/PopupWindow/*","XYZHUD/PopupWindow/Extensions/*","XYZHUD/Source/Custom/*","XYZHUD/Source/Custom/**/*"
 #"XYZHUD/**/*.{h,m}
 #s.resources = "ADVProgressBar/Resources/*.png"
 
+    s.resources = "XYZHUD/Source/XYZHUDPic.bundle"
 
     s.resource_bundles = {
         'XYZHUD' => ['XYZHUD/Assets/*.{png,xib}'],
@@ -175,7 +176,7 @@ end
 
 #Pod::Spec.new do |s|
 #s.name         = "ZYRunTimeCoT"
-#s.version      = "1.0.3"
+#s.version      = "1.0.4"
 #s.ios.deployment_target = '8.0'
 #s.summary      = "简介"
 #s.homepage     = "https://github.com/zhangyqyx/ZYRunTimeCoT"
