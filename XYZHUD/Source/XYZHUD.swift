@@ -8,7 +8,6 @@
 //DispatchQueue.main.sync {
 import UIKit
 import SoHow
-import Async
 import Localize_Swift
 import XYZColor
 import MBProgressHUD
@@ -30,7 +29,9 @@ public class XYZHUDObject: NSObject {
         rootViewController.descriptionString = 描述
         rootViewController.CustomPopupViewbackgroundColor = 颜色
         afterDelay(延迟时间) {
-            PopupWindowManager.shared.changeKeyWindow(rootViewController: rootViewController)
+            DispatchQueue.main.async {
+                PopupWindowManager.shared.changeKeyWindow(rootViewController: rootViewController)
+            }
         }
         return rootViewController
     }
@@ -47,8 +48,8 @@ public class XYZHUDObject: NSObject {
         rootViewController.titleString = 标题
         rootViewController.descriptionString = 描述
         rootViewController.CustomPopupViewbackgroundColor = 颜色
-        Async.userInitiated {}.main {
-             PopupWindowManager.shared.changeKeyWindow(rootViewController: rootViewController)
+        DispatchQueue.main.async {
+            PopupWindowManager.shared.changeKeyWindow(rootViewController: rootViewController)
         }
         popedView = rootViewController
         return rootViewController

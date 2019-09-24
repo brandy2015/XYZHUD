@@ -35,7 +35,6 @@
                                 <constraint firstAttribute="width" constant="25" id="xrI-U1-MDo"/>
                             </constraints>
                             <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            <state key="normal" image="close"/>
                             <connections>
                                 <action selector="didTapCloseButton" destination="iN0-l3-epB" eventType="touchUpInside" id="I7c-bL-NdQ"/>
                             </connections>
@@ -77,7 +76,4 @@
             <point key="canvasLocation" x="-82.5" y="-401.5"/>
         </view>
     </objects>
-    <resources>
-        <image name="close" width="24" height="24"/>
-    </resources>
 </document>

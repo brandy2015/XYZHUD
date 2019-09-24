@@ -1,10 +1,10 @@
 PODS:
   - AsyncSwift (2.0.4)
-  - Localize-Swift (2.0.0)
+  - Localize-Swift (3.0.0)
   - MBProgressHUD (1.1.0)
-  - SoHow (2.0.7):
+  - SoHow (2.0.11):
     - MBProgressHUD
-  - XYZColor (1.0.0)
+  - XYZColor (1.0.1)
   - XYZResponse (1.0.0)
 
 DEPENDENCIES:
@@ -16,7 +16,7 @@ DEPENDENCIES:
   - XYZResponse
 
 SPEC REPOS:
-  https://github.com/cocoapods/specs.git:
+  trunk:
     - AsyncSwift
     - Localize-Swift
     - MBProgressHUD
@@ -26,12 +26,12 @@ SPEC REPOS:
 
 SPEC CHECKSUMS:
   AsyncSwift: 65775a7b32e740609b24969ece3de58723b9dc3e
-  Localize-Swift: c798ec9286494866f7068f85f7c71283ac5bdab4
+  Localize-Swift: 1363ec008c6972dced79a80ac72c71d14e98db44
   MBProgressHUD: e7baa36a220447d8aeb12769bf0585582f3866d9
-  SoHow: 7663182b36fb4196393065cd3f2d997b0e791fd1
-  XYZColor: 45dbb907ad2ab586fb296db0931201bae40fdc0e
+  SoHow: 2b47fdd1c147edd78d763950248b91622a9246c9
+  XYZColor: 31df132b164c64bbe51bc9e0102fc63b1a56ccf9
   XYZResponse: 39c1d381d9a648fc0fcf2ceef9e1c34fa7e2f4ed
 
 PODFILE CHECKSUM: 5b7481b43ca1033ee320d0c3195916233bf753e3
 
-COCOAPODS: 1.7.5
+COCOAPODS: 1.8.0.beta.2
