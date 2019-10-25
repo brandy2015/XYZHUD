@@ -24,7 +24,7 @@ class DemoPopupView: UIView, PopupViewContainable, Nibable {
             closeButton.imageView?.tintColor = .white
             let bundlePath = Bundle(for: self.classForCoder).bundlePath //+ "/XYZHUDPic.bundle"
             let bundleXX = Bundle(path: bundlePath)!
-            let closeBTN = UIImage(named: "closeBTN", in: bundleXX, compatibleWith: nil)!
+            let closeBTN = UIImage(named: "closeBTN", in: bundleXX, compatibleWith: nil) ?? UIImage()
             closeButton.setImage(closeBTN, for: .normal)
         }
     }
