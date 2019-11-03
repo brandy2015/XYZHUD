@@ -170,9 +170,9 @@
 		D6CF9D3B22446CB700474876 /* Source */ = {
 			isa = PBXGroup;
 			children = (
-				D69AA9E7236E739B00DFA393 /* ARSLineProgress_Source */,
 				D6855CB522F3F00F004F0DC0 /* XYZHUD_MBProgress.swift */,
 				D6CF9D6622446CCF00474876 /* XYZHUD.swift */,
+				D69AA9E7236E739B00DFA393 /* ARSLineProgress_Source */,
 				D6CF9D3C22446CB700474876 /* PopupWindow */,
 				D6CF9D4A22446CB700474876 /* Custom */,
 			);
