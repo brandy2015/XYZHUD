@@ -2,7 +2,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "XYZHUD"
-  s.version      = "1.0.16"
+  s.version      = "1.0.17"
   s.summary      = "持续升级"
 
   s.description  = <<-DESC
@@ -12,28 +12,11 @@ Pod::Spec.new do |s|
 
   s.homepage     = "https://github.com/brandy2015/XYZHUD"
 
-
-
-
-  # s.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
-
-
-  # ―――  Spec License  ――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
-  #
-  #  Licensing your code is important. See http://choosealicense.com for more info.
-  #  CocoaPods will detect a license file if there is a named LICENSE*
-  #  Popular ones are 'MIT', 'BSD' and 'Apache License, Version 2.0'.
-  #
-
   s.license      = "MIT"
 
   s.swift_version = '5.0'
   s.pod_target_xcconfig = { 'SWIFT_VERSION' => '5.0' }
-
-
-
-
-	
+  
   s.ios.deployment_target = '12.0'
   # s.license      = { :type => "MIT", :file => "FILE_LICENSE" }
   s.author             = { "Brandy" => "" }
@@ -41,7 +24,7 @@ Pod::Spec.new do |s|
 
   s.authors            = { "Brandy" => "zhangqianbrandy2012@gmail.com" }
   s.platform     = :ios, "12.0"
-  s.source       = { :git => "https://github.com/brandy2015/XYZHUD.git", :tag => "1.0.16"}
+  s.source       = { :git => "https://github.com/brandy2015/XYZHUD.git", :tag => "1.0.17"}
   s.source_files = "XYZHUD/Source/**/*","XYZHUD/ARSLineProgress_Source/**/*"
 
 #"XYZHUD/Source/*","XYZHUD/Source/PopupWindow/*","XYZHUD/PopupWindow/Extensions/*","XYZHUD/Source/Custom/*","XYZHUD/Source/Custom/**/*"
