@@ -2,7 +2,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "XYZHUD"
-  s.version      = "1.0.17"
+  s.version      = "1.1.1"
   s.summary      = "持续升级"
 
   s.description  = <<-DESC
@@ -17,14 +17,14 @@ Pod::Spec.new do |s|
   s.swift_version = '5.0'
   s.pod_target_xcconfig = { 'SWIFT_VERSION' => '5.0' }
   
-  s.ios.deployment_target = '12.0'
+  s.ios.deployment_target = '13.0'
   # s.license      = { :type => "MIT", :file => "FILE_LICENSE" }
   s.author             = { "Brandy" => "" }
 
 
   s.authors            = { "Brandy" => "zhangqianbrandy2012@gmail.com" }
-  s.platform     = :ios, "12.0"
-  s.source       = { :git => "https://github.com/brandy2015/XYZHUD.git", :tag => "1.0.17"}
+  s.platform     = :ios, "13.0"
+  s.source       = { :git => "https://github.com/brandy2015/XYZHUD.git", :tag => "1.1.1"}
   s.source_files = "XYZHUD/Source/**/*","XYZHUD/ARSLineProgress_Source/**/*"
 
 #"XYZHUD/Source/*","XYZHUD/Source/PopupWindow/*","XYZHUD/PopupWindow/Extensions/*","XYZHUD/Source/Custom/*","XYZHUD/Source/Custom/**/*"
@@ -43,13 +43,11 @@ Pod::Spec.new do |s|
 #s.resource_bundles = {
 #'{podName}' => ['{podName}/Classes/*.xib']
 
-
-
-    s.dependency 'MBProgressHUD'
-    s.dependency 'SoHow'
     s.dependency 'XYZColor'
+    s.dependency 'MBProgressHUD'
     s.dependency 'Localize-Swift'
-    s.dependency 'XYZResponse'
+    
+    
   # s.social_media_url   = "http://twitter.com/Brandy"
 
   # ――― Platform Specifics ――――――――――――――――――――――――――――――――――――――――――――――――――――――― #

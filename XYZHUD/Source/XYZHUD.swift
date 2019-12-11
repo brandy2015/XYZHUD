@@ -5,9 +5,8 @@
 //  Created by 张子豪 on 2019/2/10.
 //  Copyright © 2019 张子豪. All rights reserved.
 //
-//DispatchQueue.main.sync {
+
 import UIKit
-import SoHow
 import Localize_Swift
 import XYZColor
 import MBProgressHUD
@@ -144,4 +143,9 @@ public class XYZHUDObject: NSObject {
         弹出popUPView(标题: "请稍等".localized(), 描述: "正在转换成LMR用于分享".localized(), 颜色: UIColor.Converting)
     }
     
+    //延迟调用
+    private func afterDelay(_ seconds: Double, closure: @escaping () -> ()) {
+        let when = DispatchTime.now() + Double(Int64(seconds * Double(NSEC_PER_SEC))) / Double(NSEC_PER_SEC)
+        DispatchQueue.main.asyncAfter(deadline: when, execute: closure)
+    }
 }

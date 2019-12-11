@@ -27,7 +27,8 @@ public class PopupWindowManager {
         } else {
             popupContainerWindow?.rootViewController = nil
             popupContainerWindow = nil
-            UIApplication.shared.keyWindow?.makeKeyAndVisible()
+            guard let keywindowScene = UIApplication.shared.connectedScenes.first as? UIWindowScene ,let keywindow = keywindowScene.windows.first else{return}
+            keywindow.makeKeyAndVisible()
         }
     }
 }

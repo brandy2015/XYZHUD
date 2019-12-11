@@ -1,6 +1,0 @@
-framework module XYZResponse {
-  umbrella header "XYZResponse-umbrella.h"
-
-  export *
-  module * { export * }
-}
