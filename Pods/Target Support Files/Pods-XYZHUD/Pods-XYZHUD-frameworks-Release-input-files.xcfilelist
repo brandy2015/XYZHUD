@@ -1,4 +1,8 @@
 ${PODS_ROOT}/Target Support Files/Pods-XYZHUD/Pods-XYZHUD-frameworks.sh
 ${BUILT_PRODUCTS_DIR}/Localize-Swift/Localize_Swift.framework
 ${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework
+${BUILT_PRODUCTS_DIR}/QuickLayout/QuickLayout.framework
+${BUILT_PRODUCTS_DIR}/SoHow/SoHow.framework
+${BUILT_PRODUCTS_DIR}/SwiftEntryKit/SwiftEntryKit.framework
 ${BUILT_PRODUCTS_DIR}/XYZColor/XYZColor.framework
+${BUILT_PRODUCTS_DIR}/XYZVCX/XYZVCX.framework

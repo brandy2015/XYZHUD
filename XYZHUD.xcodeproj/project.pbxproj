@@ -8,6 +8,47 @@
 
 /* Begin PBXBuildFile section */
 		5E20555319259E8153C1358E /* Pods_XYZHUD.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC9ACD727EE71B325DE3390E /* Pods_XYZHUD.framework */; };
+		D65CF05623CBFE8F007A712F /* XYZHUD_VTLMaker_Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D65CF02323CBFE8F007A712F /* XYZHUD_VTLMaker_Extension.swift */; };
+		D65CF05723CBFE8F007A712F /* UIVC_extension_SwiftEntryKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = D65CF02423CBFE8F007A712F /* UIVC_extension_SwiftEntryKit.swift */; };
+		D65CF05823CBFE8F007A712F /* DisplayDurationSelectionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D65CF02823CBFE8F007A712F /* DisplayDurationSelectionTableViewCell.swift */; };
+		D65CF05923CBFE8F007A712F /* UserInteractionSelectionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D65CF02923CBFE8F007A712F /* UserInteractionSelectionTableViewCell.swift */; };
+		D65CF05A23CBFE8F007A712F /* RoundCornersSelectionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D65CF02A23CBFE8F007A712F /* RoundCornersSelectionTableViewCell.swift */; };
+		D65CF05B23CBFE8F007A712F /* PositionSelectionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D65CF02B23CBFE8F007A712F /* PositionSelectionTableViewCell.swift */; };
+		D65CF05C23CBFE8F007A712F /* HapticFeedbackSelectionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D65CF02C23CBFE8F007A712F /* HapticFeedbackSelectionTableViewCell.swift */; };
+		D65CF05D23CBFE8F007A712F /* AnimationSelectionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D65CF02D23CBFE8F007A712F /* AnimationSelectionTableViewCell.swift */; };
+		D65CF05E23CBFE8F007A712F /* BorderSelectionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D65CF02E23CBFE8F007A712F /* BorderSelectionTableViewCell.swift */; };
+		D65CF05F23CBFE8F007A712F /* HeightSelectionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D65CF02F23CBFE8F007A712F /* HeightSelectionTableViewCell.swift */; };
+		D65CF06023CBFE8F007A712F /* ShadowSelectionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D65CF03023CBFE8F007A712F /* ShadowSelectionTableViewCell.swift */; };
+		D65CF06123CBFE8F007A712F /* PrioritySelectionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D65CF03123CBFE8F007A712F /* PrioritySelectionTableViewCell.swift */; };
+		D65CF06223CBFE8F007A712F /* ScrollSelectionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D65CF03223CBFE8F007A712F /* ScrollSelectionTableViewCell.swift */; };
+		D65CF06323CBFE8F007A712F /* SelectionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D65CF03323CBFE8F007A712F /* SelectionHeaderView.swift */; };
+		D65CF06423CBFE8F007A712F /* SelectionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D65CF03423CBFE8F007A712F /* SelectionTableViewCell.swift */; };
+		D65CF06523CBFE8F007A712F /* BackgroundStyleSelectionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D65CF03523CBFE8F007A712F /* BackgroundStyleSelectionTableViewCell.swift */; };
+		D65CF06623CBFE8F007A712F /* MaxWidthSelectionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D65CF03623CBFE8F007A712F /* MaxWidthSelectionTableViewCell.swift */; };
+		D65CF06723CBFE8F007A712F /* SafeAreaSelectionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D65CF03723CBFE8F007A712F /* SafeAreaSelectionTableViewCell.swift */; };
+		D65CF06823CBFE8F007A712F /* WidthSelectionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D65CF03823CBFE8F007A712F /* WidthSelectionTableViewCell.swift */; };
+		D65CF06923CBFE8F007A712F /* WindowLevelSelectionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D65CF03923CBFE8F007A712F /* WindowLevelSelectionTableViewCell.swift */; };
+		D65CF06A23CBFE8F007A712F /* EntryAttributeWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = D65CF03A23CBFE8F007A712F /* EntryAttributeWrapper.swift */; };
+		D65CF06B23CBFE8F007A712F /* PlaygroundViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D65CF03B23CBFE8F007A712F /* PlaygroundViewController.swift */; };
+		D65CF06C23CBFE8F007A712F /* UIColor+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = D65CF03D23CBFE8F007A712F /* UIColor+Utils.swift */; };
+		D65CF06D23CBFE8F007A712F /* CGRect+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = D65CF03E23CBFE8F007A712F /* CGRect+Utils.swift */; };
+		D65CF06E23CBFE8F007A712F /* UIScreen+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = D65CF03F23CBFE8F007A712F /* UIScreen+Utils.swift */; };
+		D65CF06F23CBFE8F007A712F /* Object+ClassName.swift in Sources */ = {isa = PBXBuildFile; fileRef = D65CF04023CBFE8F007A712F /* Object+ClassName.swift */; };
+		D65CF07023CBFE8F007A712F /* Font.swift in Sources */ = {isa = PBXBuildFile; fileRef = D65CF04123CBFE8F007A712F /* Font.swift */; };
+		D65CF07123CBFE8F007A712F /* UIView+Nib.swift in Sources */ = {isa = PBXBuildFile; fileRef = D65CF04223CBFE8F007A712F /* UIView+Nib.swift */; };
+		D65CF07223CBFE8F007A712F /* PresetsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D65CF04423CBFE8F007A712F /* PresetsViewController.swift */; };
+		D65CF07323CBFE8F007A712F /* PresetsDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = D65CF04623CBFE8F007A712F /* PresetsDataSource.swift */; };
+		D65CF07423CBFE8F007A712F /* PresetDescription.swift in Sources */ = {isa = PBXBuildFile; fileRef = D65CF04723CBFE8F007A712F /* PresetDescription.swift */; };
+		D65CF07523CBFE8F007A712F /* PresetTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D65CF04823CBFE8F007A712F /* PresetTableViewCell.swift */; };
+		D65CF07623CBFE8F007A712F /* ExampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D65CF04B23CBFE8F007A712F /* ExampleViewController.swift */; };
+		D65CF07723CBFE8F007A712F /* NibExampleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D65CF04D23CBFE8F007A712F /* NibExampleView.swift */; };
+		D65CF07823CBFE8F007A712F /* NibExampleView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D65CF04E23CBFE8F007A712F /* NibExampleView.xib */; };
+		D65CF07923CBFE8F007A712F /* DescriptionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D65CF05023CBFE8F007A712F /* DescriptionViewController.xib */; };
+		D65CF07A23CBFE8F007A712F /* DescriptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D65CF05123CBFE8F007A712F /* DescriptionViewController.swift */; };
+		D65CF07B23CBFE8F007A712F /* ExampleNavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D65CF05223CBFE8F007A712F /* ExampleNavigationViewController.swift */; };
+		D65CF07C23CBFE8F007A712F /* ContactsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D65CF05323CBFE8F007A712F /* ContactsViewController.swift */; };
+		D65CF07D23CBFE8F007A712F /* ContactsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D65CF05423CBFE8F007A712F /* ContactsViewController.xib */; };
+		D65CF07E23CBFE8F007A712F /* FormFieldPresetFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = D65CF05523CBFE8F007A712F /* FormFieldPresetFactory.swift */; };
 		D6855CB622F3F00F004F0DC0 /* XYZHUD_MBProgress.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6855CB522F3F00F004F0DC0 /* XYZHUD_MBProgress.swift */; };
 		D69AAA07236ECF8B00DFA393 /* ARSLineProgressHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = D69AA9FD236ECF8B00DFA393 /* ARSLineProgressHelpers.swift */; };
 		D69AAA08236ECF8B00DFA393 /* ARSLineProgressTypeAliases.swift in Sources */ = {isa = PBXBuildFile; fileRef = D69AA9FE236ECF8B00DFA393 /* ARSLineProgressTypeAliases.swift */; };
@@ -50,6 +91,47 @@
 /* Begin PBXFileReference section */
 		A3B6A6C6BEC48A553671BD5C /* Pods-XYZHUD.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XYZHUD.release.xcconfig"; path = "Target Support Files/Pods-XYZHUD/Pods-XYZHUD.release.xcconfig"; sourceTree = "<group>"; };
 		CBBC9BD9C4C006887EE2EA97 /* Pods-XYZHUD.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XYZHUD.debug.xcconfig"; path = "Target Support Files/Pods-XYZHUD/Pods-XYZHUD.debug.xcconfig"; sourceTree = "<group>"; };
+		D65CF02323CBFE8F007A712F /* XYZHUD_VTLMaker_Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XYZHUD_VTLMaker_Extension.swift; sourceTree = "<group>"; };
+		D65CF02423CBFE8F007A712F /* UIVC_extension_SwiftEntryKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIVC_extension_SwiftEntryKit.swift; sourceTree = "<group>"; };
+		D65CF02823CBFE8F007A712F /* DisplayDurationSelectionTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DisplayDurationSelectionTableViewCell.swift; sourceTree = "<group>"; };
+		D65CF02923CBFE8F007A712F /* UserInteractionSelectionTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserInteractionSelectionTableViewCell.swift; sourceTree = "<group>"; };
+		D65CF02A23CBFE8F007A712F /* RoundCornersSelectionTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundCornersSelectionTableViewCell.swift; sourceTree = "<group>"; };
+		D65CF02B23CBFE8F007A712F /* PositionSelectionTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PositionSelectionTableViewCell.swift; sourceTree = "<group>"; };
+		D65CF02C23CBFE8F007A712F /* HapticFeedbackSelectionTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HapticFeedbackSelectionTableViewCell.swift; sourceTree = "<group>"; };
+		D65CF02D23CBFE8F007A712F /* AnimationSelectionTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimationSelectionTableViewCell.swift; sourceTree = "<group>"; };
+		D65CF02E23CBFE8F007A712F /* BorderSelectionTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BorderSelectionTableViewCell.swift; sourceTree = "<group>"; };
+		D65CF02F23CBFE8F007A712F /* HeightSelectionTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeightSelectionTableViewCell.swift; sourceTree = "<group>"; };
+		D65CF03023CBFE8F007A712F /* ShadowSelectionTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShadowSelectionTableViewCell.swift; sourceTree = "<group>"; };
+		D65CF03123CBFE8F007A712F /* PrioritySelectionTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrioritySelectionTableViewCell.swift; sourceTree = "<group>"; };
+		D65CF03223CBFE8F007A712F /* ScrollSelectionTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScrollSelectionTableViewCell.swift; sourceTree = "<group>"; };
+		D65CF03323CBFE8F007A712F /* SelectionHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectionHeaderView.swift; sourceTree = "<group>"; };
+		D65CF03423CBFE8F007A712F /* SelectionTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectionTableViewCell.swift; sourceTree = "<group>"; };
+		D65CF03523CBFE8F007A712F /* BackgroundStyleSelectionTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BackgroundStyleSelectionTableViewCell.swift; sourceTree = "<group>"; };
+		D65CF03623CBFE8F007A712F /* MaxWidthSelectionTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaxWidthSelectionTableViewCell.swift; sourceTree = "<group>"; };
+		D65CF03723CBFE8F007A712F /* SafeAreaSelectionTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SafeAreaSelectionTableViewCell.swift; sourceTree = "<group>"; };
+		D65CF03823CBFE8F007A712F /* WidthSelectionTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WidthSelectionTableViewCell.swift; sourceTree = "<group>"; };
+		D65CF03923CBFE8F007A712F /* WindowLevelSelectionTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WindowLevelSelectionTableViewCell.swift; sourceTree = "<group>"; };
+		D65CF03A23CBFE8F007A712F /* EntryAttributeWrapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EntryAttributeWrapper.swift; sourceTree = "<group>"; };
+		D65CF03B23CBFE8F007A712F /* PlaygroundViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaygroundViewController.swift; sourceTree = "<group>"; };
+		D65CF03D23CBFE8F007A712F /* UIColor+Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Utils.swift"; sourceTree = "<group>"; };
+		D65CF03E23CBFE8F007A712F /* CGRect+Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CGRect+Utils.swift"; sourceTree = "<group>"; };
+		D65CF03F23CBFE8F007A712F /* UIScreen+Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIScreen+Utils.swift"; sourceTree = "<group>"; };
+		D65CF04023CBFE8F007A712F /* Object+ClassName.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Object+ClassName.swift"; sourceTree = "<group>"; };
+		D65CF04123CBFE8F007A712F /* Font.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Font.swift; sourceTree = "<group>"; };
+		D65CF04223CBFE8F007A712F /* UIView+Nib.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Nib.swift"; sourceTree = "<group>"; };
+		D65CF04423CBFE8F007A712F /* PresetsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PresetsViewController.swift; sourceTree = "<group>"; };
+		D65CF04623CBFE8F007A712F /* PresetsDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PresetsDataSource.swift; sourceTree = "<group>"; };
+		D65CF04723CBFE8F007A712F /* PresetDescription.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PresetDescription.swift; sourceTree = "<group>"; };
+		D65CF04823CBFE8F007A712F /* PresetTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PresetTableViewCell.swift; sourceTree = "<group>"; };
+		D65CF04B23CBFE8F007A712F /* ExampleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExampleViewController.swift; sourceTree = "<group>"; };
+		D65CF04D23CBFE8F007A712F /* NibExampleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NibExampleView.swift; sourceTree = "<group>"; };
+		D65CF04E23CBFE8F007A712F /* NibExampleView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NibExampleView.xib; sourceTree = "<group>"; };
+		D65CF05023CBFE8F007A712F /* DescriptionViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DescriptionViewController.xib; sourceTree = "<group>"; };
+		D65CF05123CBFE8F007A712F /* DescriptionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DescriptionViewController.swift; sourceTree = "<group>"; };
+		D65CF05223CBFE8F007A712F /* ExampleNavigationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExampleNavigationViewController.swift; sourceTree = "<group>"; };
+		D65CF05323CBFE8F007A712F /* ContactsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactsViewController.swift; sourceTree = "<group>"; };
+		D65CF05423CBFE8F007A712F /* ContactsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ContactsViewController.xib; sourceTree = "<group>"; };
+		D65CF05523CBFE8F007A712F /* FormFieldPresetFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FormFieldPresetFactory.swift; sourceTree = "<group>"; };
 		D6855CB522F3F00F004F0DC0 /* XYZHUD_MBProgress.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XYZHUD_MBProgress.swift; sourceTree = "<group>"; };
 		D69AA9FD236ECF8B00DFA393 /* ARSLineProgressHelpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ARSLineProgressHelpers.swift; sourceTree = "<group>"; };
 		D69AA9FE236ECF8B00DFA393 /* ARSLineProgressTypeAliases.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ARSLineProgressTypeAliases.swift; sourceTree = "<group>"; };
@@ -114,6 +196,134 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		D65CF02223CBFE8F007A712F /* SwiftEntry_XYZHUD_VTLMaker */ = {
+			isa = PBXGroup;
+			children = (
+				D65CF02323CBFE8F007A712F /* XYZHUD_VTLMaker_Extension.swift */,
+				D65CF02423CBFE8F007A712F /* UIVC_extension_SwiftEntryKit.swift */,
+				D65CF02523CBFE8F007A712F /* SwiftEntry_PodNeed */,
+			);
+			path = SwiftEntry_XYZHUD_VTLMaker;
+			sourceTree = "<group>";
+		};
+		D65CF02523CBFE8F007A712F /* SwiftEntry_PodNeed */ = {
+			isa = PBXGroup;
+			children = (
+				D65CF02623CBFE8F007A712F /* Playground */,
+				D65CF03C23CBFE8F007A712F /* Utils */,
+				D65CF04323CBFE8F007A712F /* Presets */,
+			);
+			path = SwiftEntry_PodNeed;
+			sourceTree = "<group>";
+		};
+		D65CF02623CBFE8F007A712F /* Playground */ = {
+			isa = PBXGroup;
+			children = (
+				D65CF02723CBFE8F007A712F /* Cells */,
+				D65CF03A23CBFE8F007A712F /* EntryAttributeWrapper.swift */,
+				D65CF03B23CBFE8F007A712F /* PlaygroundViewController.swift */,
+			);
+			path = Playground;
+			sourceTree = "<group>";
+		};
+		D65CF02723CBFE8F007A712F /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				D65CF02823CBFE8F007A712F /* DisplayDurationSelectionTableViewCell.swift */,
+				D65CF02923CBFE8F007A712F /* UserInteractionSelectionTableViewCell.swift */,
+				D65CF02A23CBFE8F007A712F /* RoundCornersSelectionTableViewCell.swift */,
+				D65CF02B23CBFE8F007A712F /* PositionSelectionTableViewCell.swift */,
+				D65CF02C23CBFE8F007A712F /* HapticFeedbackSelectionTableViewCell.swift */,
+				D65CF02D23CBFE8F007A712F /* AnimationSelectionTableViewCell.swift */,
+				D65CF02E23CBFE8F007A712F /* BorderSelectionTableViewCell.swift */,
+				D65CF02F23CBFE8F007A712F /* HeightSelectionTableViewCell.swift */,
+				D65CF03023CBFE8F007A712F /* ShadowSelectionTableViewCell.swift */,
+				D65CF03123CBFE8F007A712F /* PrioritySelectionTableViewCell.swift */,
+				D65CF03223CBFE8F007A712F /* ScrollSelectionTableViewCell.swift */,
+				D65CF03323CBFE8F007A712F /* SelectionHeaderView.swift */,
+				D65CF03423CBFE8F007A712F /* SelectionTableViewCell.swift */,
+				D65CF03523CBFE8F007A712F /* BackgroundStyleSelectionTableViewCell.swift */,
+				D65CF03623CBFE8F007A712F /* MaxWidthSelectionTableViewCell.swift */,
+				D65CF03723CBFE8F007A712F /* SafeAreaSelectionTableViewCell.swift */,
+				D65CF03823CBFE8F007A712F /* WidthSelectionTableViewCell.swift */,
+				D65CF03923CBFE8F007A712F /* WindowLevelSelectionTableViewCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		D65CF03C23CBFE8F007A712F /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				D65CF03D23CBFE8F007A712F /* UIColor+Utils.swift */,
+				D65CF03E23CBFE8F007A712F /* CGRect+Utils.swift */,
+				D65CF03F23CBFE8F007A712F /* UIScreen+Utils.swift */,
+				D65CF04023CBFE8F007A712F /* Object+ClassName.swift */,
+				D65CF04123CBFE8F007A712F /* Font.swift */,
+				D65CF04223CBFE8F007A712F /* UIView+Nib.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		D65CF04323CBFE8F007A712F /* Presets */ = {
+			isa = PBXGroup;
+			children = (
+				D65CF04423CBFE8F007A712F /* PresetsViewController.swift */,
+				D65CF04523CBFE8F007A712F /* PresetsData */,
+				D65CF04823CBFE8F007A712F /* PresetTableViewCell.swift */,
+				D65CF04923CBFE8F007A712F /* Samples */,
+				D65CF05523CBFE8F007A712F /* FormFieldPresetFactory.swift */,
+			);
+			path = Presets;
+			sourceTree = "<group>";
+		};
+		D65CF04523CBFE8F007A712F /* PresetsData */ = {
+			isa = PBXGroup;
+			children = (
+				D65CF04623CBFE8F007A712F /* PresetsDataSource.swift */,
+				D65CF04723CBFE8F007A712F /* PresetDescription.swift */,
+			);
+			path = PresetsData;
+			sourceTree = "<group>";
+		};
+		D65CF04923CBFE8F007A712F /* Samples */ = {
+			isa = PBXGroup;
+			children = (
+				D65CF04A23CBFE8F007A712F /* ExampleViewController */,
+				D65CF04C23CBFE8F007A712F /* NibExampleView */,
+				D65CF04F23CBFE8F007A712F /* ExampleNavigationController */,
+			);
+			path = Samples;
+			sourceTree = "<group>";
+		};
+		D65CF04A23CBFE8F007A712F /* ExampleViewController */ = {
+			isa = PBXGroup;
+			children = (
+				D65CF04B23CBFE8F007A712F /* ExampleViewController.swift */,
+			);
+			path = ExampleViewController;
+			sourceTree = "<group>";
+		};
+		D65CF04C23CBFE8F007A712F /* NibExampleView */ = {
+			isa = PBXGroup;
+			children = (
+				D65CF04D23CBFE8F007A712F /* NibExampleView.swift */,
+				D65CF04E23CBFE8F007A712F /* NibExampleView.xib */,
+			);
+			path = NibExampleView;
+			sourceTree = "<group>";
+		};
+		D65CF04F23CBFE8F007A712F /* ExampleNavigationController */ = {
+			isa = PBXGroup;
+			children = (
+				D65CF05023CBFE8F007A712F /* DescriptionViewController.xib */,
+				D65CF05123CBFE8F007A712F /* DescriptionViewController.swift */,
+				D65CF05223CBFE8F007A712F /* ExampleNavigationViewController.swift */,
+				D65CF05323CBFE8F007A712F /* ContactsViewController.swift */,
+				D65CF05423CBFE8F007A712F /* ContactsViewController.xib */,
+			);
+			path = ExampleNavigationController;
+			sourceTree = "<group>";
+		};
 		D69AA9FC236ECF8B00DFA393 /* ARSLineProgress_Source */ = {
 			isa = PBXGroup;
 			children = (
@@ -158,6 +368,7 @@
 				D6CF9CFE22446C2500474876 /* AppDelegate.swift */,
 				D6CF9D0022446C2500474876 /* ViewController.swift */,
 				D6CF9D0222446C2500474876 /* Main.storyboard */,
+				D65CF02223CBFE8F007A712F /* SwiftEntry_XYZHUD_VTLMaker */,
 				D6CF9D3B22446CB700474876 /* Source */,
 				D6CF9D0522446C2600474876 /* Assets.xcassets */,
 				D6CF9D0A22446C2600474876 /* Info.plist */,
@@ -305,10 +516,13 @@
 				D6CF9D6B2244718500474876 /* README.md in Resources */,
 				D6CF9D0922446C2600474876 /* LaunchScreen.storyboard in Resources */,
 				D6CF9D0622446C2600474876 /* Assets.xcassets in Resources */,
+				D65CF07923CBFE8F007A712F /* DescriptionViewController.xib in Resources */,
+				D65CF07823CBFE8F007A712F /* NibExampleView.xib in Resources */,
 				D6CF9D6D224471B500474876 /* XYZHUD.podspec in Resources */,
 				D6CF9D6122446CB700474876 /* DemoPopupView.xib in Resources */,
 				D6CF9D0422446C2500474876 /* Main.storyboard in Resources */,
 				D6CF9D692244718000474876 /* LICENSE in Resources */,
+				D65CF07D23CBFE8F007A712F /* ContactsViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -362,35 +576,73 @@
 			buildActionMask = 2147483647;
 			files = (
 				D69AAA0D236ECF8B00DFA393 /* ARSLineProgressCustomization.swift in Sources */,
+				D65CF05D23CBFE8F007A712F /* AnimationSelectionTableViewCell.swift in Sources */,
 				D69AAA10236ECF8B00DFA393 /* ARSLineProgressProtocols.swift in Sources */,
 				D6CF9D6222446CB700474876 /* CustomPopupViewController.swift in Sources */,
 				D69AAA0A236ECF8B00DFA393 /* ARSLineProgressConstants.swift in Sources */,
 				D6CF9D0122446C2500474876 /* ViewController.swift in Sources */,
 				D6CF9D5822446CB700474876 /* ShapeType.swift in Sources */,
 				D6CF9D5922446CB700474876 /* PopupWindowManager.swift in Sources */,
+				D65CF07123CBFE8F007A712F /* UIView+Nib.swift in Sources */,
+				D65CF05E23CBFE8F007A712F /* BorderSelectionTableViewCell.swift in Sources */,
 				D6CF9CFF22446C2500474876 /* AppDelegate.swift in Sources */,
 				D6855CB622F3F00F004F0DC0 /* XYZHUD_MBProgress.swift in Sources */,
+				D65CF06D23CBFE8F007A712F /* CGRect+Utils.swift in Sources */,
 				D69AAA0E236ECF8B00DFA393 /* ARSStatus.swift in Sources */,
 				D69AAA0C236ECF8B00DFA393 /* ARSLineProgressExtensions.swift in Sources */,
 				D69AAA08236ECF8B00DFA393 /* ARSLineProgressTypeAliases.swift in Sources */,
+				D65CF06A23CBFE8F007A712F /* EntryAttributeWrapper.swift in Sources */,
 				D6CF9D6422446CB700474876 /* UIColor+Background.swift in Sources */,
 				D69AAA0F236ECF8B00DFA393 /* ARSProgressLoader.swift in Sources */,
+				D65CF06B23CBFE8F007A712F /* PlaygroundViewController.swift in Sources */,
+				D65CF06723CBFE8F007A712F /* SafeAreaSelectionTableViewCell.swift in Sources */,
+				D65CF05723CBFE8F007A712F /* UIVC_extension_SwiftEntryKit.swift in Sources */,
+				D65CF06223CBFE8F007A712F /* ScrollSelectionTableViewCell.swift in Sources */,
 				D6CF9D6322446CB700474876 /* Nibable.swift in Sources */,
+				D65CF07023CBFE8F007A712F /* Font.swift in Sources */,
 				D6CF9D5C22446CB700474876 /* UIView+Shape.swift in Sources */,
 				D6CF9D5F22446CB700474876 /* PopupContainerView.swift in Sources */,
+				D65CF06E23CBFE8F007A712F /* UIScreen+Utils.swift in Sources */,
+				D65CF07A23CBFE8F007A712F /* DescriptionViewController.swift in Sources */,
 				D69AAA09236ECF8B00DFA393 /* ARSInfiniteLoader.swift in Sources */,
+				D65CF07423CBFE8F007A712F /* PresetDescription.swift in Sources */,
+				D65CF06823CBFE8F007A712F /* WidthSelectionTableViewCell.swift in Sources */,
+				D65CF07223CBFE8F007A712F /* PresetsViewController.swift in Sources */,
+				D65CF06623CBFE8F007A712F /* MaxWidthSelectionTableViewCell.swift in Sources */,
+				D65CF05623CBFE8F007A712F /* XYZHUD_VTLMaker_Extension.swift in Sources */,
+				D65CF06123CBFE8F007A712F /* PrioritySelectionTableViewCell.swift in Sources */,
 				D6CF9D5B22446CB700474876 /* CGRect+Inset.swift in Sources */,
 				D69AAA07236ECF8B00DFA393 /* ARSLineProgressHelpers.swift in Sources */,
+				D65CF06523CBFE8F007A712F /* BackgroundStyleSelectionTableViewCell.swift in Sources */,
+				D65CF07B23CBFE8F007A712F /* ExampleNavigationViewController.swift in Sources */,
+				D65CF06F23CBFE8F007A712F /* Object+ClassName.swift in Sources */,
 				D6CF9D5A22446CB700474876 /* PopupContainerWindow.swift in Sources */,
 				D6CF9D6022446CB700474876 /* DemoPopupView.swift in Sources */,
 				D6CF9D5622446CB700474876 /* ViewType.swift in Sources */,
 				D6CF9D5522446CB700474876 /* PopupViewContainable.swift in Sources */,
+				D65CF05923CBFE8F007A712F /* UserInteractionSelectionTableViewCell.swift in Sources */,
+				D65CF07523CBFE8F007A712F /* PresetTableViewCell.swift in Sources */,
+				D65CF06C23CBFE8F007A712F /* UIColor+Utils.swift in Sources */,
 				D6CF9D5E22446CB700474876 /* PopupItem.swift in Sources */,
+				D65CF07723CBFE8F007A712F /* NibExampleView.swift in Sources */,
 				D6CF9D6722446CCF00474876 /* XYZHUD.swift in Sources */,
+				D65CF06423CBFE8F007A712F /* SelectionTableViewCell.swift in Sources */,
+				D65CF07323CBFE8F007A712F /* PresetsDataSource.swift in Sources */,
+				D65CF05C23CBFE8F007A712F /* HapticFeedbackSelectionTableViewCell.swift in Sources */,
+				D65CF07E23CBFE8F007A712F /* FormFieldPresetFactory.swift in Sources */,
+				D65CF05B23CBFE8F007A712F /* PositionSelectionTableViewCell.swift in Sources */,
 				D6CF9D5D22446CB700474876 /* PopupViewDirection.swift in Sources */,
+				D65CF07C23CBFE8F007A712F /* ContactsViewController.swift in Sources */,
+				D65CF07623CBFE8F007A712F /* ExampleViewController.swift in Sources */,
+				D65CF06023CBFE8F007A712F /* ShadowSelectionTableViewCell.swift in Sources */,
 				D69AAA0B236ECF8B00DFA393 /* ARSLineProgress.swift in Sources */,
+				D65CF06923CBFE8F007A712F /* WindowLevelSelectionTableViewCell.swift in Sources */,
+				D65CF05F23CBFE8F007A712F /* HeightSelectionTableViewCell.swift in Sources */,
 				D6CF9D6522446CB700474876 /* UIView+Shadow.swift in Sources */,
+				D65CF05823CBFE8F007A712F /* DisplayDurationSelectionTableViewCell.swift in Sources */,
 				D6CF9D5722446CB700474876 /* BasePopupViewController.swift in Sources */,
+				D65CF06323CBFE8F007A712F /* SelectionHeaderView.swift in Sources */,
+				D65CF05A23CBFE8F007A712F /* RoundCornersSelectionTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -8,4 +8,7 @@ target 'XYZHUD' do
   pod 'XYZColor'               #自己的管理颜色
   pod 'Localize-Swift'         #翻译各种语言
   pod 'MBProgressHUD'
+  pod 'SwiftEntryKit'
+  pod 'XYZVCX'
+  pod 'SoHow'
 end

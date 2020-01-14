@@ -1,9 +1,9 @@
 ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES
-FRAMEWORK_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/Localize-Swift" "${PODS_CONFIGURATION_BUILD_DIR}/MBProgressHUD" "${PODS_CONFIGURATION_BUILD_DIR}/XYZColor"
+FRAMEWORK_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/Localize-Swift" "${PODS_CONFIGURATION_BUILD_DIR}/MBProgressHUD" "${PODS_CONFIGURATION_BUILD_DIR}/QuickLayout" "${PODS_CONFIGURATION_BUILD_DIR}/SoHow" "${PODS_CONFIGURATION_BUILD_DIR}/SwiftEntryKit" "${PODS_CONFIGURATION_BUILD_DIR}/XYZColor" "${PODS_CONFIGURATION_BUILD_DIR}/XYZVCX"
 GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
-HEADER_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/Localize-Swift/Localize_Swift.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/MBProgressHUD/MBProgressHUD.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/XYZColor/XYZColor.framework/Headers"
+HEADER_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/Localize-Swift/Localize_Swift.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/MBProgressHUD/MBProgressHUD.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/QuickLayout/QuickLayout.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/SoHow/SoHow.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/SwiftEntryKit/SwiftEntryKit.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/XYZColor/XYZColor.framework/Headers" "${PODS_CONFIGURATION_BUILD_DIR}/XYZVCX/XYZVCX.framework/Headers"
 LD_RUNPATH_SEARCH_PATHS = $(inherited) '@executable_path/Frameworks' '@loader_path/Frameworks'
-OTHER_LDFLAGS = $(inherited) -framework "CoreGraphics" -framework "Localize_Swift" -framework "MBProgressHUD" -framework "QuartzCore" -framework "XYZColor"
+OTHER_LDFLAGS = $(inherited) -framework "CoreGraphics" -framework "Localize_Swift" -framework "MBProgressHUD" -framework "QuartzCore" -framework "QuickLayout" -framework "SoHow" -framework "SwiftEntryKit" -framework "UIKit" -framework "XYZColor" -framework "XYZVCX"
 OTHER_SWIFT_FLAGS = $(inherited) -D COCOAPODS
 PODS_BUILD_DIR = ${BUILD_DIR}
 PODS_CONFIGURATION_BUILD_DIR = ${PODS_BUILD_DIR}/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)
