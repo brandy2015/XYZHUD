@@ -8,9 +8,11 @@
 
 import UIKit
 import SwiftEntryKit
+import Localize_Swift
 
 extension UIViewController{
-   func popAlert()  {
+  
+    func popAlert()  {
         var displayMode: EKAttributes.DisplayMode {
             return PresetsDataSource.displayMode
         }
@@ -230,6 +232,13 @@ extension UIViewController{
          SwiftEntryKit.display(entry: contentView, using: attributes)
      }
      
+    
+    
+    
+    
+    
+    
+    
     
     
 }

@@ -1,6 +1,0 @@
-framework module XYZColor {
-  umbrella header "XYZColor-umbrella.h"
-
-  export *
-  module * { export * }
-}
