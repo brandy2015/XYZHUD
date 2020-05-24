@@ -187,14 +187,14 @@ private extension UIColor{
         return UIColor(red: 247/255, green: 200/255, blue: 96/255, alpha:0.8)
     }
 }
-private extension UIColor{
-    struct xyzcolor {
-        struct Netflix {
-            public static let light = UIColor(rgb: 0x485563)
-            public static let dark = UIColor(rgb: 0x29323c)
-        }
-    }
-}
+//private extension UIColor{
+//    struct xyzcolor {
+//        struct Netflix {
+//            public static let light = UIColor(rgb: 0x485563)
+//            public static let dark = UIColor(rgb: 0x29323c)
+//        }
+//    }
+//}
 //
 //private class SelfColor_Extension: NSObject {
 //    
@@ -228,17 +228,17 @@ private extension UIColor {
 //    
     static let darkDefault = UIColor(white: 45.0/255.0, alpha: 1)
     static let grayText = UIColor(white: 160.0/255.0, alpha: 1)
-    static let facebookDarkBlue = UIColor.by(r: 59, g: 89, b: 152)
+//    static let facebookDarkBlue = UIColor.by(r: 59, g: 89, b: 152)
 //    static let dimmedLightBackground = UIColor(white: 100.0/255.0, alpha: 0.3)
 //    static let dimmedDarkBackground = UIColor(white: 50.0/255.0, alpha: 0.3)
 //    static let pinky = UIColor(rgb: 0xE91E63)
 //    static let amber = UIColor(rgb: 0xFFC107)
 //    static let satCyan = UIColor(rgb: 0x00BCD4)
-    static let darkText = UIColor(rgb: 0x212121)
+//    static let darkText = UIColor(rgb: 0x212121)
 //    static let redish = UIColor(rgb: 0xFF5252)
-    static let darkSubText = UIColor(rgb: 0x757575)
+//    static let darkSubText = UIColor(rgb: 0x757575)
 //    static let greenGrass = UIColor(rgb: 0x4CAF50)
-    static let darkChatMessage = UIColor(red: 48, green: 47, blue: 48)
+//    static let darkChatMessage = UIColor(red: 48, green: 47, blue: 48)
 }
 
 //private struct EKColor {
