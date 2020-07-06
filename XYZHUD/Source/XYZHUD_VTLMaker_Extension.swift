@@ -10,7 +10,7 @@ import UIKit
 import SwiftEntryKit
 import Localize_Swift
 
-extension UIViewController{
+public extension UIViewController{
   
     func popAlert()  {
         var displayMode: EKAttributes.DisplayMode {
