@@ -46,7 +46,7 @@ public extension UIViewController{
 
 
 //上传系列
-extension UIViewController{
+public extension UIViewController{
     func XYZHUD_dismiss()  {
         
         self.HUDDismiss(dismissTime: 0.01)
@@ -74,7 +74,7 @@ extension UIViewController{
     
 }
 
-extension UIViewController{
+public extension UIViewController{
     //    afterDelay(0.1) {self._1showWatingHUD全屏()}
     //    afterDelay(3) {self._1showWatingHUD宽条()}//毛玻璃请稍等
     //    afterDelay(5) { self._6showButtonBarMessagex跳转相册()}
@@ -154,7 +154,7 @@ extension UIViewController{
 
 
 //HUD
-extension UIViewController{
+public extension UIViewController{
     
     
     func _5showAlertViewx多项选择(title:String = "请选择",text :String = "选择从什么类型转换为GIF",imageName:String = "xuanze") {
@@ -377,7 +377,7 @@ class XYZHUD_VTLMaker_Extension: NSObject {
 }
 //DispatchQueue.main.async {self.showWatingHUD(title: "请稍等".localized(), desc: "松手后开启强制转换".localized(), duration: 2)}
 
-extension UIViewController{
+public extension UIViewController{
 //   func popAlert()  {
 //        var displayMode: EKAttributes.DisplayMode {
 //            return PresetsDataSource.displayMode
