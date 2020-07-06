@@ -51,6 +51,7 @@
 		D65CF07C23CBFE8F007A712F /* ContactsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D65CF05323CBFE8F007A712F /* ContactsViewController.swift */; };
 		D65CF07D23CBFE8F007A712F /* ContactsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D65CF05423CBFE8F007A712F /* ContactsViewController.xib */; };
 		D65CF07E23CBFE8F007A712F /* FormFieldPresetFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = D65CF05523CBFE8F007A712F /* FormFieldPresetFactory.swift */; };
+		D667FEB724B366EE000B50A1 /* XYZHUD_XYZQR_Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D667FEB624B366EE000B50A1 /* XYZHUD_XYZQR_Extension.swift */; };
 		D6855CB622F3F00F004F0DC0 /* XYZHUD_MBProgress.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6855CB522F3F00F004F0DC0 /* XYZHUD_MBProgress.swift */; };
 		D69AAA07236ECF8B00DFA393 /* ARSLineProgressHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = D69AA9FD236ECF8B00DFA393 /* ARSLineProgressHelpers.swift */; };
 		D69AAA08236ECF8B00DFA393 /* ARSLineProgressTypeAliases.swift in Sources */ = {isa = PBXBuildFile; fileRef = D69AA9FE236ECF8B00DFA393 /* ARSLineProgressTypeAliases.swift */; };
@@ -136,6 +137,7 @@
 		D65CF05323CBFE8F007A712F /* ContactsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContactsViewController.swift; sourceTree = "<group>"; };
 		D65CF05423CBFE8F007A712F /* ContactsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ContactsViewController.xib; sourceTree = "<group>"; };
 		D65CF05523CBFE8F007A712F /* FormFieldPresetFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FormFieldPresetFactory.swift; sourceTree = "<group>"; };
+		D667FEB624B366EE000B50A1 /* XYZHUD_XYZQR_Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XYZHUD_XYZQR_Extension.swift; sourceTree = "<group>"; };
 		D6855CB522F3F00F004F0DC0 /* XYZHUD_MBProgress.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XYZHUD_MBProgress.swift; sourceTree = "<group>"; };
 		D69AA9FD236ECF8B00DFA393 /* ARSLineProgressHelpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ARSLineProgressHelpers.swift; sourceTree = "<group>"; };
 		D69AA9FE236ECF8B00DFA393 /* ARSLineProgressTypeAliases.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ARSLineProgressTypeAliases.swift; sourceTree = "<group>"; };
@@ -375,6 +377,7 @@
 			children = (
 				D65CF02523CBFE8F007A712F /* SwiftEntry_PodNeed */,
 				D65CF02323CBFE8F007A712F /* XYZHUD_VTLMaker_Extension.swift */,
+				D667FEB624B366EE000B50A1 /* XYZHUD_XYZQR_Extension.swift */,
 				D65CF02423CBFE8F007A712F /* UIVC_extension_SwiftEntryKit.swift */,
 				D6296A7724B3519C005BDB96 /* XUIVC_extension_SwiftEntryKit.swift */,
 				D6296A7524B3503E005BDB96 /* WoZai_XYZHUD_Extension.swift */,
@@ -585,6 +588,7 @@
 				D65CF05E23CBFE8F007A712F /* BorderSelectionTableViewCell.swift in Sources */,
 				D6CF9CFF22446C2500474876 /* AppDelegate.swift in Sources */,
 				D6855CB622F3F00F004F0DC0 /* XYZHUD_MBProgress.swift in Sources */,
+				D667FEB724B366EE000B50A1 /* XYZHUD_XYZQR_Extension.swift in Sources */,
 				D65CF06D23CBFE8F007A712F /* CGRect+Utils.swift in Sources */,
 				D69AAA0E236ECF8B00DFA393 /* ARSStatus.swift in Sources */,
 				D69AAA0C236ECF8B00DFA393 /* ARSLineProgressExtensions.swift in Sources */,
