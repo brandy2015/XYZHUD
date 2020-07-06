@@ -23,31 +23,31 @@ class ViewController: UIViewController {
         
         
     }
-    @IBAction func ddd(_ sender: Any) {
-        showWatingHUD()
-    }
-    
-    @IBAction func BTN(_ sender: Any) {
-        showButtonBarMessagex跳转到相册吗()
-    }
-    
-    @IBAction func BTN4(_ sender: Any) {
-        SelectOneBTN()
-    }
-    
-    @IBAction func BTN5(_ sender: Any) {
-//        showNote(attributes: .)
-    }
-    
-    @IBAction func BTN6(_ sender: Any) {
-        showImageNote(attributes: .bottomFloat)
-    }
-    
-    @IBAction func BTN7(_ sender: Any) {
-    }
-    
-    @IBAction func BTN8(_ sender: Any) {
-    }
+//    @IBAction func ddd(_ sender: Any) {
+//        showWatingHUD()
+//    }
+//    
+//    @IBAction func BTN(_ sender: Any) {
+//        showButtonBarMessagex跳转到相册吗()
+//    }
+//    
+//    @IBAction func BTN4(_ sender: Any) {
+//        SelectOneBTN()
+//    }
+//    
+//    @IBAction func BTN5(_ sender: Any) {
+////        showNote(attributes: .)
+//    }
+//    
+//    @IBAction func BTN6(_ sender: Any) {
+//        showImageNote(attributes: .bottomFloat)
+//    }
+//    
+//    @IBAction func BTN7(_ sender: Any) {
+//    }
+//    
+//    @IBAction func BTN8(_ sender: Any) {
+//    }
     
     
     override func viewDidLoad() {

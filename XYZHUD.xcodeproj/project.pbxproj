@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		5E20555319259E8153C1358E /* Pods_XYZHUD.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FC9ACD727EE71B325DE3390E /* Pods_XYZHUD.framework */; };
+		D6296A7624B3503E005BDB96 /* WoZai_XYZHUD_Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6296A7524B3503E005BDB96 /* WoZai_XYZHUD_Extension.swift */; };
+		D6296A7824B3519C005BDB96 /* XUIVC_extension_SwiftEntryKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6296A7724B3519C005BDB96 /* XUIVC_extension_SwiftEntryKit.swift */; };
 		D65CF05623CBFE8F007A712F /* XYZHUD_VTLMaker_Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D65CF02323CBFE8F007A712F /* XYZHUD_VTLMaker_Extension.swift */; };
 		D65CF05723CBFE8F007A712F /* UIVC_extension_SwiftEntryKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = D65CF02423CBFE8F007A712F /* UIVC_extension_SwiftEntryKit.swift */; };
 		D65CF05823CBFE8F007A712F /* DisplayDurationSelectionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D65CF02823CBFE8F007A712F /* DisplayDurationSelectionTableViewCell.swift */; };
@@ -91,6 +93,8 @@
 /* Begin PBXFileReference section */
 		A3B6A6C6BEC48A553671BD5C /* Pods-XYZHUD.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XYZHUD.release.xcconfig"; path = "Target Support Files/Pods-XYZHUD/Pods-XYZHUD.release.xcconfig"; sourceTree = "<group>"; };
 		CBBC9BD9C4C006887EE2EA97 /* Pods-XYZHUD.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XYZHUD.debug.xcconfig"; path = "Target Support Files/Pods-XYZHUD/Pods-XYZHUD.debug.xcconfig"; sourceTree = "<group>"; };
+		D6296A7524B3503E005BDB96 /* WoZai_XYZHUD_Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WoZai_XYZHUD_Extension.swift; sourceTree = "<group>"; };
+		D6296A7724B3519C005BDB96 /* XUIVC_extension_SwiftEntryKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XUIVC_extension_SwiftEntryKit.swift; sourceTree = "<group>"; };
 		D65CF02323CBFE8F007A712F /* XYZHUD_VTLMaker_Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XYZHUD_VTLMaker_Extension.swift; sourceTree = "<group>"; };
 		D65CF02423CBFE8F007A712F /* UIVC_extension_SwiftEntryKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIVC_extension_SwiftEntryKit.swift; sourceTree = "<group>"; };
 		D65CF02823CBFE8F007A712F /* DisplayDurationSelectionTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DisplayDurationSelectionTableViewCell.swift; sourceTree = "<group>"; };
@@ -380,6 +384,8 @@
 		D6CF9D3B22446CB700474876 /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				D6296A7724B3519C005BDB96 /* XUIVC_extension_SwiftEntryKit.swift */,
+				D6296A7524B3503E005BDB96 /* WoZai_XYZHUD_Extension.swift */,
 				D6855CB522F3F00F004F0DC0 /* XYZHUD_MBProgress.swift */,
 				D6CF9D6622446CCF00474876 /* XYZHUD.swift */,
 				D69AA9FC236ECF8B00DFA393 /* ARSLineProgress_Source */,
@@ -609,11 +615,13 @@
 				D65CF06823CBFE8F007A712F /* WidthSelectionTableViewCell.swift in Sources */,
 				D65CF07223CBFE8F007A712F /* PresetsViewController.swift in Sources */,
 				D65CF06623CBFE8F007A712F /* MaxWidthSelectionTableViewCell.swift in Sources */,
+				D6296A7624B3503E005BDB96 /* WoZai_XYZHUD_Extension.swift in Sources */,
 				D65CF05623CBFE8F007A712F /* XYZHUD_VTLMaker_Extension.swift in Sources */,
 				D65CF06123CBFE8F007A712F /* PrioritySelectionTableViewCell.swift in Sources */,
 				D6CF9D5B22446CB700474876 /* CGRect+Inset.swift in Sources */,
 				D69AAA07236ECF8B00DFA393 /* ARSLineProgressHelpers.swift in Sources */,
 				D65CF06523CBFE8F007A712F /* BackgroundStyleSelectionTableViewCell.swift in Sources */,
+				D6296A7824B3519C005BDB96 /* XUIVC_extension_SwiftEntryKit.swift in Sources */,
 				D65CF07B23CBFE8F007A712F /* ExampleNavigationViewController.swift in Sources */,
 				D65CF06F23CBFE8F007A712F /* Object+ClassName.swift in Sources */,
 				D6CF9D5A22446CB700474876 /* PopupContainerWindow.swift in Sources */,

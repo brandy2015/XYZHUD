@@ -37,8 +37,8 @@ extension UIViewController{
     
     // MARK: Entry Samples
     // Bumps a standard note
-       func showNote(attributes: EKAttributes) {
-        let text = "Pssst! I have something to tell you..."
+    func showNote(Text:String = "Waiting for the goodies to arrive!",attributes: EKAttributes) {
+        let text = Text//"Pssst! I have something to tell you..."
         let style = EKProperty.LabelStyle(
             font: MainFont.light.with(size: 14),
             color: .white,
@@ -51,7 +51,6 @@ extension UIViewController{
         let contentView = EKNoteMessageView(with: labelContent)
         SwiftEntryKit.display(entry: contentView, using: attributes)
     }
-    
     
     
     
@@ -114,8 +113,8 @@ extension UIViewController{
         SwiftEntryKit.display(entry: contentView, using: attributes)
     }
     
-       func showProcessingNote(attributes: EKAttributes) {
-        let text = "Waiting for the goodies to arrive!"
+    func showProcessingNote(Text:String = "Waiting for the goodies to arrive!",attributes: EKAttributes) {
+        let text = Text
         let style = EKProperty.LabelStyle(
             font: MainFont.light.with(size: 14),
             color: .white,
@@ -133,8 +132,7 @@ extension UIViewController{
         SwiftEntryKit.display(entry: contentView, using: attributes)
     }
     
-    // Bumps a status bar replacement entry
-       func showStatusBarMessage(attributes: EKAttributes) {
+    func showStatusBarMessage(LeftString:String = "My 🧠",trailing:String = "Wonders!",attributes: EKAttributes) {
         let statusBarHeight = UIApplication.shared.statusBarFrame.maxY
         let contentView: UIView
         let font = MainFont.light.with(size: 12)
@@ -169,6 +167,8 @@ extension UIViewController{
         }
         SwiftEntryKit.display(entry: contentView, using: attributes)
     }
+    
+    
     
     // Show rating view
        func showRatingView(attributes: EKAttributes) {
