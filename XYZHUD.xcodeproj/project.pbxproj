@@ -89,6 +89,7 @@
 		D6CF9D692244718000474876 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = D6CF9D682244718000474876 /* LICENSE */; };
 		D6CF9D6B2244718500474876 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = D6CF9D6A2244718500474876 /* README.md */; };
 		D6CF9D6D224471B500474876 /* XYZHUD.podspec in Resources */ = {isa = PBXBuildFile; fileRef = D6CF9D6C224471B400474876 /* XYZHUD.podspec */; };
+		D6EBE5C424B3FF5300DCB224 /* XYZHUD_XYZDay_Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6EBE5C324B3FF4100DCB224 /* XYZHUD_XYZDay_Ex.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -178,6 +179,7 @@
 		D6CF9D682244718000474876 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		D6CF9D6A2244718500474876 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		D6CF9D6C224471B400474876 /* XYZHUD.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = XYZHUD.podspec; sourceTree = "<group>"; };
+		D6EBE5C324B3FF4100DCB224 /* XYZHUD_XYZDay_Ex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XYZHUD_XYZDay_Ex.swift; sourceTree = "<group>"; };
 		FC9ACD727EE71B325DE3390E /* Pods_XYZHUD.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_XYZHUD.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -375,6 +377,7 @@
 		D6CF9D3B22446CB700474876 /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				D6EBE5C324B3FF4100DCB224 /* XYZHUD_XYZDay_Ex.swift */,
 				D65CF02523CBFE8F007A712F /* SwiftEntry_PodNeed */,
 				D65CF02323CBFE8F007A712F /* XYZHUD_VTLMaker_Extension.swift */,
 				D667FEB624B366EE000B50A1 /* XYZHUD_XYZQR_Extension.swift */,
@@ -581,6 +584,7 @@
 				D69AAA10236ECF8B00DFA393 /* ARSLineProgressProtocols.swift in Sources */,
 				D6CF9D6222446CB700474876 /* CustomPopupViewController.swift in Sources */,
 				D69AAA0A236ECF8B00DFA393 /* ARSLineProgressConstants.swift in Sources */,
+				D6EBE5C424B3FF5300DCB224 /* XYZHUD_XYZDay_Ex.swift in Sources */,
 				D6CF9D0122446C2500474876 /* ViewController.swift in Sources */,
 				D6CF9D5822446CB700474876 /* ShapeType.swift in Sources */,
 				D6CF9D5922446CB700474876 /* PopupWindowManager.swift in Sources */,
