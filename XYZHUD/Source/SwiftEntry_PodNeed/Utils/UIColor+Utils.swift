@@ -155,7 +155,7 @@ extension EKColor {
     }
 }
 
-struct Color {
+public struct Color {
     struct BlueGray {
         static let c50 = EKColor(rgb: 0xeceff1)
         static let c100 = EKColor(rgb: 0xcfd8dc)
@@ -193,9 +193,9 @@ struct Color {
         static let a700 = EKColor(rgb: 0xffd600)
     }
     
-    struct Teal {
+    public struct Teal {
         static let a700 = EKColor(rgb: 0x00bfa5)
-        static let a600 = EKColor(rgb: 0x00897b)
+        public static let a600 = EKColor(rgb: 0x00897b)
     }
     
     struct Orange {

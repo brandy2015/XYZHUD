@@ -8,9 +8,8 @@
 
 import UIKit
 import SwiftEntryKit
- 
 
-extension NSObject{
+public extension NSObject{
     func popAlertXXss(VC:UIViewController,title:String,description:String,image:UIImage? = nil,AlertColor:EKAttributes.BackgroundStyle = .color(color: Color.Teal.a600))  {
         var displayMode: EKAttributes.DisplayMode {
             return PresetsDataSource.displayMode
