@@ -1,8 +1,3 @@
-
-
-
-
-
 # XYZHUD
 Easy way in Swift
 自用的HUD
@@ -10,7 +5,7 @@ Easy way in Swift
 
 
 ## Requirements
-* Xcode 11.2 or higher
+* Xcode 12.3 or higher
 * iOS 13.0 or higher (may work on previous versions, just did not test it)
 * ARC
 * Swift 5.1
