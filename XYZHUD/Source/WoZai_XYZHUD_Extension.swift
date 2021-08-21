@@ -320,7 +320,7 @@ public extension UIViewController{
                 // MARK: - Properties
                 
                 //                self.popAlert()
-                print("准备跳转到相册")
+                print("准备跳转到相册\(self)")
                 
                 
         }

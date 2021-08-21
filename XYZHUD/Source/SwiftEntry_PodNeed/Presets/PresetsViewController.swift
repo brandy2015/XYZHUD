@@ -123,7 +123,30 @@ class PresetsViewController: UIViewController {
             mode: PresetsDataSource.displayMode
         )
         // Just in case view-controller-based-status-bar-appearance is being tinkered with
-        UIApplication.shared.statusBarStyle = preferredStatusBarStyle
+//        UIApplication.shared.statusBarStyle = preferredStatusBarStyle
+//        UIApplication.shared.setStatusBarStyle(.darkContent, animated: true)
+//
+//
+//
+//        self.preferredStatusBarStyle
+//        'keyWindow' was deprecated in iOS 13.0: Should not be used for applications that support multiple scenes as it returns a key window across all connected scenes
+//         
+//        let keyWindow = UIApplication.shared.connectedScenes
+//                .filter({$0.activationState == .foregroundActive})
+//                .compactMap({$0 as? UIWindowScene})
+//                .first?.windows
+//                .filter({$0.isKeyWindow}).first
+//         
+//        
+////        UIApplication.shared.windows.filter {$0.isKeyWindow}.first
+//        keyWindow?.windowScene?.statusBarManager?.statusBarStyle
+//        
+//        preferredStatusBarStyle
+//        if let x = UIApplication.shared.keyWindow?.windowScene?.statusBarManager{
+//            x.statusBarStyle = preferredStatusBarStyle
+//        } //?? UIApplication.shared.statusBarStyle{}
+//        x = preferredStatusBarStyle
+        
         setNeedsStatusBarAppearanceUpdate()
     }
     

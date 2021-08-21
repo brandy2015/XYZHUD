@@ -15,8 +15,8 @@ class ViewController: UIViewController {
         
 //        showWatingHUD()
         
-        
-        popAlert()
+        _2WaitingHUD窄条宽一点()
+//        popAlert()
 //        DispatchQueue.main.async {self.showWatingHUD(title: "请稍等".localized(), desc: "松手后开启强制转换".localized(), duration: 2)}
 //        XYZHUD.
         

@@ -127,13 +127,14 @@ extension UIViewController{
         )
         let contentView = EKProcessingNoteMessageView(
             with: labelContent,
-            activityIndicator: .white
+            activityIndicator: UIActivityIndicatorView.Style.medium
         )
         SwiftEntryKit.display(entry: contentView, using: attributes)
     }
     
     func showStatusBarMessage(LeftString:String = "My 🧠",trailing:String = "Wonders!",attributes: EKAttributes) {
-        let statusBarHeight = UIApplication.shared.statusBarFrame.maxY
+        guard let statusBarHeight = UIApplication.shared.statusBarUIView?.frame.maxY else{return}//UIApplication.shared.statusBarFrame.maxY
+         
         let contentView: UIView
         let font = MainFont.light.with(size: 12)
         let labelStyle = EKProperty.LabelStyle(
@@ -752,7 +753,4 @@ extension UIViewController{
            }
            SwiftEntryKit.display(entry: contentView, using: attributes, presentInsideKeyWindow: true)
        }
-    
-    
-    
 }
