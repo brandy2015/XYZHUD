@@ -6,9 +6,7 @@ PODS:
   - Localize-Swift/UIKit (3.2.0):
     - Localize-Swift/LocalizeSwiftCore
   - MBProgressHUD (1.2.0)
-  - QuickLayout (3.0.0)
-  - SwiftEntryKit (1.2.7):
-    - QuickLayout (= 3.0.0)
+  - SwiftEntryKit (2.0.0)
 
 DEPENDENCIES:
   - Localize-Swift
@@ -19,15 +17,13 @@ SPEC REPOS:
   trunk:
     - Localize-Swift
     - MBProgressHUD
-    - QuickLayout
     - SwiftEntryKit
 
 SPEC CHECKSUMS:
   Localize-Swift: 6f4475136bdb0d7b2882ea3d4ea919d70142b232
   MBProgressHUD: 3ee5efcc380f6a79a7cc9b363dd669c5e1ae7406
-  QuickLayout: 07b45a72b10083fee3f095990cfed1c1e7b27f0a
-  SwiftEntryKit: 537c92699d6034efb1ef9c32b11e0b37c97aa589
+  SwiftEntryKit: 61b5fa36f34a97dd8013e48a7345bc4c4720be9a
 
 PODFILE CHECKSUM: c4f996b1dcd356614545014853fb209b9ad349b1
 
-COCOAPODS: 1.10.1
+COCOAPODS: 1.11.2
