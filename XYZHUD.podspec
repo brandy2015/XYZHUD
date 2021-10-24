@@ -2,7 +2,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "XYZHUD"
-  s.version      = "3.0.3"
+  s.version      = "3.0.4"
   s.summary      = "持续升级"
 
   s.description  = <<-DESC
@@ -24,7 +24,7 @@ Pod::Spec.new do |s|
 
   s.authors            = { "Brandy" => "zhangqianbrandy2012@gmail.com" }
   s.platform     = :ios, "13.0"
-  s.source       = { :git => "https://github.com/brandy2015/XYZHUD.git", :tag => "3.0.3"}
+  s.source       = { :git => "https://github.com/brandy2015/XYZHUD.git", :tag => "3.0.4"}
   s.source_files = "XYZHUD/Source/**/*","XYZHUD/ARSLineProgress_Source/**/*"
 
 #"XYZHUD/Source/*","XYZHUD/Source/PopupWindow/*","XYZHUD/PopupWindow/Extensions/*","XYZHUD/Source/Custom/*","XYZHUD/Source/Custom/**/*"

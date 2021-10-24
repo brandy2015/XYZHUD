@@ -6,8 +6,7 @@
 //  Copyright (c) 2018 huri000@gmail.com. All rights reserved.
 //
 
-import SwiftEntryKit
-//import QuickLayout
+import SwiftEntryKit 
 import UIKit
 
 class PresetTableViewCell: UITableViewCell {
