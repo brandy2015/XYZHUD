@@ -63,6 +63,7 @@
 		D69AAA0E236ECF8B00DFA393 /* ARSStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = D69AAA04236ECF8B00DFA393 /* ARSStatus.swift */; };
 		D69AAA0F236ECF8B00DFA393 /* ARSProgressLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = D69AAA05236ECF8B00DFA393 /* ARSProgressLoader.swift */; };
 		D69AAA10236ECF8B00DFA393 /* ARSLineProgressProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = D69AAA06236ECF8B00DFA393 /* ARSLineProgressProtocols.swift */; };
+		D6BC9B0227335FBD00ACB815 /* XYZHUD_XYZPic_Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6BC9B0127335FBD00ACB815 /* XYZHUD_XYZPic_Ex.swift */; };
 		D6CF9CFF22446C2500474876 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6CF9CFE22446C2500474876 /* AppDelegate.swift */; };
 		D6CF9D0122446C2500474876 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6CF9D0022446C2500474876 /* ViewController.swift */; };
 		D6CF9D0422446C2500474876 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D6CF9D0222446C2500474876 /* Main.storyboard */; };
@@ -150,6 +151,7 @@
 		D69AAA04236ECF8B00DFA393 /* ARSStatus.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ARSStatus.swift; sourceTree = "<group>"; };
 		D69AAA05236ECF8B00DFA393 /* ARSProgressLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ARSProgressLoader.swift; sourceTree = "<group>"; };
 		D69AAA06236ECF8B00DFA393 /* ARSLineProgressProtocols.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ARSLineProgressProtocols.swift; sourceTree = "<group>"; };
+		D6BC9B0127335FBD00ACB815 /* XYZHUD_XYZPic_Ex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XYZHUD_XYZPic_Ex.swift; sourceTree = "<group>"; };
 		D6CF9CFB22446C2500474876 /* XYZHUD.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XYZHUD.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D6CF9CFE22446C2500474876 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D6CF9D0022446C2500474876 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -377,6 +379,7 @@
 		D6CF9D3B22446CB700474876 /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				D6BC9B0127335FBD00ACB815 /* XYZHUD_XYZPic_Ex.swift */,
 				D6EBE5C324B3FF4100DCB224 /* XYZHUD_XYZDay_Ex.swift */,
 				D65CF02523CBFE8F007A712F /* SwiftEntry_PodNeed */,
 				D65CF02323CBFE8F007A712F /* XYZHUD_VTLMaker_Extension.swift */,
@@ -629,6 +632,7 @@
 				D6CF9D5622446CB700474876 /* ViewType.swift in Sources */,
 				D6CF9D5522446CB700474876 /* PopupViewContainable.swift in Sources */,
 				D65CF05923CBFE8F007A712F /* UserInteractionSelectionTableViewCell.swift in Sources */,
+				D6BC9B0227335FBD00ACB815 /* XYZHUD_XYZPic_Ex.swift in Sources */,
 				D65CF07523CBFE8F007A712F /* PresetTableViewCell.swift in Sources */,
 				D65CF06C23CBFE8F007A712F /* UIColor+Utils.swift in Sources */,
 				D6CF9D5E22446CB700474876 /* PopupItem.swift in Sources */,
