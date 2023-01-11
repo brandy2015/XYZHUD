@@ -2,7 +2,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "XYZHUD"
-  s.version      = "3.0.5"
+  s.version      = "3.0.7"
   s.summary      = "持续升级"
 
   s.description  = <<-DESC
@@ -24,7 +24,7 @@ Pod::Spec.new do |s|
 
   s.authors            = { "Brandy" => "zhangqianbrandy2012@gmail.com" }
   s.platform     = :ios, "13.0"
-  s.source       = { :git => "https://github.com/brandy2015/XYZHUD.git", :tag => "3.0.5"}
+  s.source       = { :git => "https://github.com/brandy2015/XYZHUD.git", :tag => "3.0.7"}
   s.source_files = "XYZHUD/Source/**/*","XYZHUD/ARSLineProgress_Source/**/*"
 
 #"XYZHUD/Source/*","XYZHUD/Source/PopupWindow/*","XYZHUD/PopupWindow/Extensions/*","XYZHUD/Source/Custom/*","XYZHUD/Source/Custom/**/*"
@@ -33,9 +33,9 @@ Pod::Spec.new do |s|
 
 
 
-    s.resource_bundles = {
-        'XYZHUD' => ['XYZHUD/Assets/*.{png,xib}','XYZHUD/Source/Custom/Popup/*.xib','XYZHUD/*.xcassets'],
-    }
+    #s.resource_bundles = {
+    #    'XYZHUD' => [ 'XYZHUD/Source/Custom/Popup/*.xib' ],
+   # }
 #s.resources = "XYZHUD/Source/XYZHUDPic.bundle"
 
 
@@ -44,8 +44,7 @@ Pod::Spec.new do |s|
 #'{podName}' => ['{podName}/Classes/*.xib']
  
     s.dependency 'MBProgressHUD'
-    s.dependency 'Localize-Swift'
-    s.dependency 'SwiftEntryKit'
+    s.dependency 'Localize-Swift' 
    
     
   # s.social_media_url   = "http://twitter.com/Brandy"

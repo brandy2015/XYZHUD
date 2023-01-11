@@ -6,7 +6,8 @@
 //  Copyright (c) 2018 huri000@gmail.com. All rights reserved.
 //
 
-import SwiftEntryKit
+ 
+import UIKit
 
 final class AnimationSelectionTableViewCell: SelectionTableViewCell {
     

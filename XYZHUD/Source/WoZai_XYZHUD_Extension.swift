@@ -1,17 +1,5 @@
-//
-//  XYZHUD_VTLMaker_Extension.swift
-//  VTLMaker
-//
-//  Created by 张子豪 on 2019/11/7.
-//  Copyright © 2019 zhangqian. All rights reserved.
-//
-
+ 
 import UIKit
-import SwiftEntryKit
-//import XYZHUD
-//import XYZVCX
-//import SoHow
-
  //登录系列
 public extension UIViewController{
     func XYZHUD_正在登录() {
@@ -354,7 +342,7 @@ public extension UIViewController{
         attributes.entranceAnimation = .init(
             translate: .init(duration: 0.65, spring: .init(damping: 0.8, initialVelocity: 0))
         )
-        let image = UIImage(named:imageName)!
+        let image = UIImage(named:imageName)  ?? UIImage()
         let title = "Congratz!"
         let description = "Your book coupon is 5w1ft3ntr1k1t"
         self.showPopupMessage(attributes: attributes,

@@ -1,14 +1,6 @@
-//
-//  XYZHUD_XYZPic_Ex.swift
-//  XYZHUD
-//
-//  Created by zhangzihao on 2021/11/4.
-//  Copyright © 2021 张子豪. All rights reserved.
-//
-
+ 
 import UIKit
-import SwiftEntryKit
-
+ 
 public extension UIViewController{
     
     func DeleteInputPhoto(显示时间:Double = 3,AlertTitle:String = "是否删除".localized(),imageName:String = "",Content:String = "是否删除已导入照片在相册中的原照片".localized(),OKBTN: (()->Void)? = nil,Failed: (()->Void)? = nil) {

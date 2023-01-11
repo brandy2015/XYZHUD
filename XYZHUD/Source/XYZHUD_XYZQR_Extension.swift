@@ -69,8 +69,7 @@ public extension UIViewController{
 
 
 
-import UIKit
-import SwiftEntryKit
+import UIKit 
 
 public extension UIViewController{
     

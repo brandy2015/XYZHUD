@@ -1,13 +1,6 @@
-//
-//  XYZHUD_VTLMaker_Extension.swift
-//  VTLMaker
-//
-//  Created by 张子豪 on 2019/11/7.
-//  Copyright © 2019 zhangqian. All rights reserved.
-//
+ 
 
-import UIKit
-import SwiftEntryKit
+import UIKit 
 import Localize_Swift
 
 public extension UIViewController{
@@ -22,7 +15,7 @@ public extension UIViewController{
         attributes.entranceAnimation = .init(
             translate: .init(duration: 0.65, spring: .init(damping: 0.8, initialVelocity: 0))
         )
-        let image = UIImage(named: "ic_success")!
+        let image = UIImage(named: "ic_success")
         let title = "Congratz!"
         let description = "Your book coupon is 5w1ft3ntr1k1t"
         self.showPopupMessage(attributes: attributes,
@@ -36,7 +29,7 @@ public extension UIViewController{
     }
    
     
-    func showWatingHUD(title:String = "请稍等".localized(),desc:String = "正在转换，稍等".localized(),imageName:String = "NextBTNXXX".localized(),duration:Double = 60.0) {
+    func showWatingHUD(title:String = "请稍等".localized(),desc:String = "正在转换，稍等".localized(),imageName:String = "NextBTNXXX" ,duration:Double = 60.0) {
         var attibutes = PresetsDataSource()[3,0].attributes
         attibutes.displayMode = .inferred
         attibutes.displayDuration = EKAttributes.DisplayDuration(exactly: duration)!

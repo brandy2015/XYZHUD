@@ -1,13 +1,6 @@
-//
-//  PresetsDataSource.swift
-//  SwiftEntryKit_Example
-//
-//  Created by Daniel Huri on 4/27/18.
-//  Copyright (c) 2018 huri000@gmail.com. All rights reserved.
-//
-
+ 
 import Foundation
-import SwiftEntryKit
+import UIKit
 
 struct PresetsDataSource {
     

@@ -1,12 +1,5 @@
-//
-//  PresetsViewController.swift
-//  SwiftEntryKit
-//
-//  Created by Daniel Huri on 04/14/2018.
-//  Copyright (c) 2018 huri000@gmail.com. All rights reserved.
-//
-
-import SwiftEntryKit
+ 
+ 
 import UIKit
 
 /** This view controller offers presets to choose from */

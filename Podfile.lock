@@ -6,24 +6,20 @@ PODS:
   - Localize-Swift/UIKit (3.2.0):
     - Localize-Swift/LocalizeSwiftCore
   - MBProgressHUD (1.2.0)
-  - SwiftEntryKit (2.0.0)
 
 DEPENDENCIES:
   - Localize-Swift
   - MBProgressHUD
-  - SwiftEntryKit
 
 SPEC REPOS:
   trunk:
     - Localize-Swift
     - MBProgressHUD
-    - SwiftEntryKit
 
 SPEC CHECKSUMS:
   Localize-Swift: 6f4475136bdb0d7b2882ea3d4ea919d70142b232
   MBProgressHUD: 3ee5efcc380f6a79a7cc9b363dd669c5e1ae7406
-  SwiftEntryKit: 61b5fa36f34a97dd8013e48a7345bc4c4720be9a
 
-PODFILE CHECKSUM: c4f996b1dcd356614545014853fb209b9ad349b1
+PODFILE CHECKSUM: 14a221f0f73aae2f199f1158d08fb0dfc6bad69d
 
-COCOAPODS: 1.11.2
+COCOAPODS: 1.11.3

@@ -5,9 +5,20 @@
 //  Created by Daniel Huri on 04/14/2018.
 //  Copyright (c) 2018 huri000@gmail.com. All rights reserved.
 //
+ 
 
 import UIKit
 
+extension UIScreen {
+    var minEdge: CGFloat {
+        return UIScreen.main.bounds.minEdge
+    }
+}
+extension CGRect {
+    var minEdge: CGFloat {
+        return min(width, height)
+    }
+}
 extension UILabel {
     var style: EKProperty.LabelStyle {
         set {

@@ -1,13 +1,6 @@
-//
-//  PresentTVC_extension.swift
-//  TestEntry
-//
-//  Created by 张子豪 on 2019/11/6.
-//  Copyright © 2019 张子豪. All rights reserved.
-//
+ 
 
-import UIKit
-import SwiftEntryKit
+import UIKit 
 
 extension UIViewController{
     
@@ -68,7 +61,7 @@ extension UIViewController{
             style: style
         )
         let imageContent = EKProperty.ImageContent(
-            image: UIImage(named: "ic_wifi")!,
+            image: (UIImage(named: "ic_wifi") ?? UIImage()),
             displayMode: displayMode
         )
         let contentView = EKImageNoteMessageView(
@@ -173,12 +166,12 @@ extension UIViewController{
     // Show rating view
        func showRatingView(attributes: EKAttributes) {
         let unselectedImage = EKProperty.ImageContent(
-            image: UIImage(named: "ic_star_unselected")!.withRenderingMode(.alwaysTemplate),
+            image: (UIImage(named: "ic_star_unselected") ?? UIImage()).withRenderingMode(.alwaysTemplate),
             displayMode: displayMode,
             tint: .standardContent
         )
         let selectedImage = EKProperty.ImageContent(
-            image: UIImage(named: "ic_star_selected")!.withRenderingMode(.alwaysTemplate),
+            image: (UIImage(named: "ic_star_selected") ?? UIImage()).withRenderingMode(.alwaysTemplate),
             displayMode: displayMode,
             tint: EKColor.ratingStar
         )
@@ -314,7 +307,7 @@ extension UIViewController{
         var image: EKProperty.ImageContent?
         if let imageName = imageName {
             image = EKProperty.ImageContent(
-                image: UIImage(named: imageName)!.withRenderingMode(.alwaysTemplate),
+                image: (UIImage(named: imageName) ?? UIImage()).withRenderingMode(.alwaysTemplate),
                 displayMode: displayMode,
                 size: CGSize(width: 35, height: 35),
                 tint: textColor,
@@ -375,7 +368,7 @@ extension UIViewController{
     }
     
        func showDarkAwesomePopupMessage(attributes: EKAttributes) {
-        let image = UIImage(named: "ic_done_all_dark_48pt")!.withRenderingMode(.alwaysTemplate)
+        let image = (UIImage(named: "ic_done_all_dark_48pt") ?? UIImage()).withRenderingMode(.alwaysTemplate)
         let title = "Awesome!"
         let description =
         """
@@ -394,7 +387,7 @@ extension UIViewController{
     }
     
        func showLightAwesomePopupMessage(attributes: EKAttributes) {
-        let image = UIImage(named: "ic_done_all_light_48pt")!.withRenderingMode(.alwaysTemplate)
+        let image = (UIImage(named: "ic_done_all_light_48pt") ?? UIImage()).withRenderingMode(.alwaysTemplate)
         let title = "Awesome!"
         let description = "You are using SwiftEntryKit, and this is a pop up with important content"
         showPopupMessage(attributes: attributes,
@@ -541,7 +534,7 @@ extension UIViewController{
                 attributes.entranceAnimation = .init(
                     translate: .init(duration: 0.65, spring: .init(damping: 0.8, initialVelocity: 0))
                 )
-                let image = UIImage(named: "ic_success")!
+                let image = UIImage(named: "ic_success")  ?? UIImage()
                 let title = "Congratz!"
                 let description = "Your book coupon is 5w1ft3ntr1k1t"
                 self.showPopupMessage(attributes: attributes,

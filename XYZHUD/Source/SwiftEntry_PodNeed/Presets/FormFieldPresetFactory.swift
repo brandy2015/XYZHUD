@@ -1,13 +1,6 @@
-//
-//  FormFieldPresetFactory.swift
-//  SwiftEntryKitDemo
-//
-//  Created by Daniel Huri on 5/18/18.
-//  Copyright (c) 2018 huri000@gmail.com. All rights reserved.
-//
-
+ 
 import Foundation
-import SwiftEntryKit
+import UIKit
 
 struct TextFieldOptionSet: OptionSet {
     let rawValue: Int

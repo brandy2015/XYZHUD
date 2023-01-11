@@ -7,5 +7,5 @@ target 'XYZHUD' do
   #自有库
   pod 'Localize-Swift'         #翻译各种语言
   pod 'MBProgressHUD'
-  pod 'SwiftEntryKit'
+#  pod 'SwiftEntryKit'
 end
