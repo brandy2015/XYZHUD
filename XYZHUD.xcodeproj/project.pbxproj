@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -128,7 +128,7 @@
 		D69AAA10236ECF8B00DFA393 /* ARSLineProgressProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = D69AAA06236ECF8B00DFA393 /* ARSLineProgressProtocols.swift */; };
 		D6BC9B0227335FBD00ACB815 /* XYZHUD_XYZPic_Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6BC9B0127335FBD00ACB815 /* XYZHUD_XYZPic_Ex.swift */; };
 		D6CF9CFF22446C2500474876 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6CF9CFE22446C2500474876 /* AppDelegate.swift */; };
-		D6CF9D0122446C2500474876 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6CF9D0022446C2500474876 /* ViewController.swift */; };
+		D6CF9D0122446C2500474876 /* VC_Demo.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6CF9D0022446C2500474876 /* VC_Demo.swift */; };
 		D6CF9D0422446C2500474876 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D6CF9D0222446C2500474876 /* Main.storyboard */; };
 		D6CF9D0622446C2600474876 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D6CF9D0522446C2600474876 /* Assets.xcassets */; };
 		D6CF9D0922446C2600474876 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D6CF9D0722446C2600474876 /* LaunchScreen.storyboard */; };
@@ -279,7 +279,7 @@
 		D6BC9B0127335FBD00ACB815 /* XYZHUD_XYZPic_Ex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XYZHUD_XYZPic_Ex.swift; sourceTree = "<group>"; };
 		D6CF9CFB22446C2500474876 /* XYZHUD.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XYZHUD.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D6CF9CFE22446C2500474876 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		D6CF9D0022446C2500474876 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D6CF9D0022446C2500474876 /* VC_Demo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VC_Demo.swift; sourceTree = "<group>"; };
 		D6CF9D0322446C2500474876 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D6CF9D0522446C2600474876 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D6CF9D0822446C2600474876 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -552,7 +552,7 @@
 			isa = PBXGroup;
 			children = (
 				D6CF9CFE22446C2500474876 /* AppDelegate.swift */,
-				D6CF9D0022446C2500474876 /* ViewController.swift */,
+				D6CF9D0022446C2500474876 /* VC_Demo.swift */,
 				D6CF9D0222446C2500474876 /* Main.storyboard */,
 				D6CF9D3B22446CB700474876 /* Source */,
 				D6CF9D0522446C2600474876 /* Assets.xcassets */,
@@ -774,7 +774,7 @@
 				D6CF9D6222446CB700474876 /* CustomPopupViewController.swift in Sources */,
 				D69AAA0A236ECF8B00DFA393 /* ARSLineProgressConstants.swift in Sources */,
 				D6EBE5C424B3FF5300DCB224 /* XYZHUD_XYZDay_Ex.swift in Sources */,
-				D6CF9D0122446C2500474876 /* ViewController.swift in Sources */,
+				D6CF9D0122446C2500474876 /* VC_Demo.swift in Sources */,
 				D6CF9D5822446CB700474876 /* ShapeType.swift in Sources */,
 				D620165D296EE19A00CE24F9 /* EKAccessoryNoteMessageView.swift in Sources */,
 				D620165E296EE19A00CE24F9 /* EKAlertMessage.swift in Sources */,
@@ -1054,7 +1054,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9GZYHL8TWB;
 				INFOPLIST_FILE = "$(SRCROOT)/XYZHUD/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1074,7 +1074,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9GZYHL8TWB;
 				INFOPLIST_FILE = "$(SRCROOT)/XYZHUD/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
