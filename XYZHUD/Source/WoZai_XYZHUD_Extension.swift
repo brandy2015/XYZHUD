@@ -1,6 +1,5 @@
  
 import UIKit
-import MBProgressHUD
  //登录系列
 public extension UIViewController{
     func XYZHUD_正在登录() {
@@ -317,20 +316,16 @@ public extension UIViewController{
     
 }
 
-private enum XYZHUDToastLevel {
-    case success
-    case error
-    case neutral
-}
-
 private final class XYZHUDPresenter {
     static let shared = XYZHUDPresenter()
 
-    private weak var toastHUD: MBProgressHUD?
-    private weak var loadingHUD: MBProgressHUD?
-
     private var lastToastText: String = ""
     private var lastToastAt: Date = .distantPast
+
+    private var loadingVisible = false
+    private var loadingText = ""
+    private var loadingPresentedAt: Date?
+    private var pendingLoadingWorkItem: DispatchWorkItem?
 
     private let toastDedupWindow: TimeInterval = 0.9
     private let toastDuration: TimeInterval = 1.4
@@ -360,37 +355,13 @@ private final class XYZHUDPresenter {
             self.lastToastText = text
             self.lastToastAt = now
 
-            self.toastHUD?.hide(animated: false)
-            self.toastHUD = nil
+            self.pendingLoadingWorkItem?.cancel()
+            self.pendingLoadingWorkItem = nil
+            self.loadingVisible = false
+            self.loadingText = ""
+            self.loadingPresentedAt = nil
 
-            guard let host = self.hostView() else { return }
-            let hud = MBProgressHUD.showAdded(to: host, animated: true)
-            hud.removeFromSuperViewOnHide = true
-            hud.mode = .text
-            hud.animationType = .fade
-            hud.isUserInteractionEnabled = false
-            hud.label.numberOfLines = 2
-            hud.label.text = text
-            hud.offset = CGPoint(x: 0, y: -(host.bounds.height * 0.34))
-            hud.bezelView.style = .blur
-
-            switch self.toastLevel(for: text) {
-            case .success:
-                hud.contentColor = .systemGreen
-            case .error:
-                hud.contentColor = .systemRed
-            case .neutral:
-                hud.contentColor = .label
-            }
-
-            self.toastHUD = hud
-            hud.completionBlock = { [weak self, weak hud] in
-                guard let self = self else { return }
-                if self.toastHUD === hud {
-                    self.toastHUD = nil
-                }
-            }
-            hud.hide(animated: true, afterDelay: self.toastDuration)
+            self.presentToast(text: text)
         }
     }
 
@@ -400,80 +371,86 @@ private final class XYZHUDPresenter {
             let normalized = self.normalizeText(rawText)
             let text = normalized.isEmpty ? "请稍等..." : normalized
 
-            if let hud = self.loadingHUD {
-                hud.label.text = text
+            if self.loadingVisible {
+                guard text != self.loadingText else { return }
+                self.loadingText = text
+                self.presentLoading(text: text)
                 return
             }
 
-            guard let host = self.hostView() else { return }
-            self.toastHUD?.hide(animated: false)
-            self.toastHUD = nil
+            self.loadingText = text
+            self.pendingLoadingWorkItem?.cancel()
 
-            let hud = MBProgressHUD.showAdded(to: host, animated: true)
-            hud.removeFromSuperViewOnHide = true
-            hud.mode = .indeterminate
-            hud.animationType = .fade
-            hud.graceTime = self.loadingGraceTime
-            hud.minShowTime = self.loadingMinShowTime
-            hud.isUserInteractionEnabled = false
-            hud.label.numberOfLines = 2
-            hud.label.text = text
-            hud.bezelView.style = .blur
-            self.loadingHUD = hud
+            let work = DispatchWorkItem { [weak self] in
+                guard let self = self else { return }
+                self.presentLoading(text: self.loadingText)
+            }
+            self.pendingLoadingWorkItem = work
+            DispatchQueue.main.asyncAfter(deadline: .now() + self.loadingGraceTime, execute: work)
         }
     }
 
     func dismiss(after delay: Double) {
         runOnMain { [weak self] in
             guard let self = self else { return }
+            self.pendingLoadingWorkItem?.cancel()
+            self.pendingLoadingWorkItem = nil
+
             let dismissBlock = {
-                self.toastHUD?.hide(animated: true)
-                self.toastHUD = nil
-                self.loadingHUD?.hide(animated: true)
-                self.loadingHUD = nil
+                self.loadingVisible = false
+                self.loadingText = ""
+                self.loadingPresentedAt = nil
                 // 兼容历史调用链
                 SwiftEntryKit.dismiss()
             }
 
-            if delay <= 0 {
+            var finalDelay = max(0, delay)
+            if self.loadingVisible, let shownAt = self.loadingPresentedAt {
+                let elapsed = Date().timeIntervalSince(shownAt)
+                let remain = max(0, self.loadingMinShowTime - elapsed)
+                finalDelay = max(finalDelay, remain)
+            }
+
+            if finalDelay <= 0 {
                 dismissBlock()
             } else {
-                DispatchQueue.main.asyncAfter(deadline: .now() + delay, execute: dismissBlock)
+                DispatchQueue.main.asyncAfter(deadline: .now() + finalDelay, execute: dismissBlock)
             }
         }
     }
 
-    private func hostView() -> UIView? {
-        if #available(iOS 13.0, *) {
-            return UIApplication.shared.connectedScenes
-                .compactMap { $0 as? UIWindowScene }
-                .flatMap { $0.windows }
-                .first(where: { $0.isKeyWindow })
-        }
-        return UIApplication.shared.windows.first
+    private func presentToast(text: String) {
+        SwiftEntryKit.dismiss()
+        let contentView = EKNoteMessageView(with: makeLabelContent(text: text))
+        var attributes = makeTopAttributes()
+        attributes.displayDuration = EKAttributes.DisplayDuration(exactly: toastDuration) ?? .infinity
+        SwiftEntryKit.display(entry: contentView, using: attributes)
     }
 
-    private func toastLevel(for text: String) -> XYZHUDToastLevel {
-        let lower = text.lowercased()
-        if text.contains("失败")
-            || text.contains("错误")
-            || text.contains("无权限")
-            || text.contains("权限")
-            || lower.contains("error")
-            || lower.contains("fail")
-            || lower.contains("denied") {
-            return .error
-        }
-        if text.contains("成功")
-            || text.contains("已完成")
-            || text.contains("已发送")
-            || text.contains("已删除")
-            || text.contains("已更新")
-            || lower.contains("success")
-            || lower.contains("done") {
-            return .success
-        }
-        return .neutral
+    private func presentLoading(text: String) {
+        SwiftEntryKit.dismiss()
+        let contentView = EKProcessingNoteMessageView(with: makeLabelContent(text: text), activityIndicator: .white)
+        var attributes = makeTopAttributes()
+        attributes.displayDuration = .infinity
+        SwiftEntryKit.display(entry: contentView, using: attributes)
+        loadingVisible = true
+        loadingPresentedAt = Date()
+    }
+
+    private func makeTopAttributes() -> EKAttributes {
+        var attributes = PresetsDataSource()[4, 0].attributes
+        attributes.displayMode = .inferred
+        attributes.position = .top
+        return attributes
+    }
+
+    private func makeLabelContent(text: String) -> EKProperty.LabelContent {
+        let style = EKProperty.LabelStyle(
+            font: MainFont.light.with(size: 14),
+            color: .white,
+            alignment: .center
+        )
+        return EKProperty.LabelContent(text: text, style: style)
     }
 
     private func normalizeText(_ rawText: String) -> String {

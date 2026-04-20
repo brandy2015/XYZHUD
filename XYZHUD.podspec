@@ -2,7 +2,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "XYZHUD"
-  s.version      = "3.0.7"
+  s.version      = "3.0.9"
   s.summary      = "持续升级"
 
   s.description  = <<-DESC
@@ -24,8 +24,12 @@ Pod::Spec.new do |s|
 
   s.authors            = { "Brandy" => "zhangqianbrandy2012@gmail.com" }
   s.platform     = :ios, "13.0"
-  s.source       = { :git => "https://github.com/brandy2015/XYZHUD.git", :tag => "3.0.7"}
+  s.source       = { :git => "https://github.com/brandy2015/XYZHUD.git", :tag => "3.0.9"}
   s.source_files = "XYZHUD/Source/**/*","XYZHUD/ARSLineProgress_Source/**/*"
+  s.exclude_files = [
+    "XYZHUD/Source/SwiftEntryKit/LICENSE",
+    "XYZHUD/Source/SwiftEntryKit/README.md"
+  ]
 
 #"XYZHUD/Source/*","XYZHUD/Source/PopupWindow/*","XYZHUD/PopupWindow/Extensions/*","XYZHUD/Source/Custom/*","XYZHUD/Source/Custom/**/*"
 #"XYZHUD/**/*.{h,m}
@@ -43,7 +47,6 @@ Pod::Spec.new do |s|
 #s.resource_bundles = {
 #'{podName}' => ['{podName}/Classes/*.xib']
  
-    s.dependency 'MBProgressHUD'
     s.dependency 'Localize-Swift' 
    
     
