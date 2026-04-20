@@ -1,5 +1,6 @@
  
 import UIKit
+import MBProgressHUD
  //登录系列
 public extension UIViewController{
     func XYZHUD_正在登录() {
@@ -72,70 +73,27 @@ public extension UIViewController{
     
     //    HUDDismiss()
     func HUDDismiss(dismissTime:Double = 0.01)  {
-        afterDelay(dismissTime) {
-            SwiftEntryKit.dismiss()
-        }
-        
+        XYZHUDPresenter.shared.dismiss(after: dismissTime)
     }
     
     func _1showWatingHUD全屏(title:String = "请稍等", HUDName :String =  "正在转换，稍等",image:String = "Tab_BrainStormBar") {
-        
-        //        0，1是全屏
-        //       2-0  2-5也行彩色黄红
-        
-        
-        //        3，2粉红圆角很好底下
-        //        3，3飞入
-        // 1,0也很好
-        //        4-0毛玻璃
-        //             4-2从底下弹出
-        
-        //        3-0稍等界面
-        //        5-0从底下弹出VC  5-1透明
-        var attibutes = PresetsDataSource()[0,1].attributes
-        attibutes.displayMode = .inferred
-        attibutes.displayDuration = .infinity
-        attibutes.position = .top
-        showNotificationMessage(attributes: attibutes,
-                                title: title,
-                                desc: HUDName,
-                                textColor: .standardContent,
-                                imageName: image)
+        XYZHUDPresenter.shared.showLoading(text: HUDName)
     }
     
     func _1showWatingHUD宽条(title:String = "请稍等", HUDName :String =  "正在转换，稍等",image:String = "Tab_BrainStormBar") {
-        //        毛玻璃
-        var attibutes = PresetsDataSource()[4,0].attributes
-        attibutes.displayMode = .inferred
-        attibutes.displayDuration = .infinity
-        attibutes.position = .top
-        showNotificationMessage(attributes: attibutes,
-                                title: title,
-                                desc: HUDName,
-                                textColor: .standardContent,
-                                imageName: image)
+        XYZHUDPresenter.shared.showLoading(text: HUDName)
     }
     func _2WaitingHUD窄条宽一点(LeftString:String = "My 🧠",trailing:String = "Wonders!") {
-        let dataSource = PresetsDataSource()
-        let attributes = dataSource[4, 0].attributes
-        
-        showStatusBarMessage(LeftString: LeftString, trailing: trailing, attributes: attributes)
-        
-        
+        XYZHUDPresenter.shared.showToast(text: "\(LeftString) \(trailing)")
     }
     
     
     func _3showBarWaiting窄条(HUDName :String = "上传成功")  {
-        let dataSource = PresetsDataSource()
-        let attributes = dataSource[4, 0].attributes
-        showNote(Text: HUDName, attributes: attributes)
-        //        noteCellSelected(with: attributes, row: 1)
+        XYZHUDPresenter.shared.showToast(text: HUDName)
     }
     
     func _4WaitingHUD窄条(HUDName :String = "正在上传ing")  {
-        let dataSource = PresetsDataSource()
-        let attributes = dataSource[4, 0].attributes
-        showProcessingNote(Text: HUDName, attributes: attributes)
+        XYZHUDPresenter.shared.showLoading(text: HUDName)
     }
     
 }
@@ -357,6 +315,184 @@ public extension UIViewController{
     
     
     
+}
+
+private enum XYZHUDToastLevel {
+    case success
+    case error
+    case neutral
+}
+
+private final class XYZHUDPresenter {
+    static let shared = XYZHUDPresenter()
+
+    private weak var toastHUD: MBProgressHUD?
+    private weak var loadingHUD: MBProgressHUD?
+
+    private var lastToastText: String = ""
+    private var lastToastAt: Date = .distantPast
+
+    private let toastDedupWindow: TimeInterval = 0.9
+    private let toastDuration: TimeInterval = 1.4
+    private let loadingGraceTime: TimeInterval = 0.2
+    private let loadingMinShowTime: TimeInterval = 0.35
+
+    private init() {}
+
+    private func runOnMain(_ work: @escaping () -> Void) {
+        if Thread.isMainThread {
+            work()
+        } else {
+            DispatchQueue.main.async(execute: work)
+        }
+    }
+
+    func showToast(text rawText: String) {
+        runOnMain { [weak self] in
+            guard let self = self else { return }
+            let text = self.normalizeText(rawText)
+            guard !text.isEmpty else { return }
+
+            let now = Date()
+            if text == self.lastToastText, now.timeIntervalSince(self.lastToastAt) < self.toastDedupWindow {
+                return
+            }
+            self.lastToastText = text
+            self.lastToastAt = now
+
+            self.toastHUD?.hide(animated: false)
+            self.toastHUD = nil
+
+            guard let host = self.hostView() else { return }
+            let hud = MBProgressHUD.showAdded(to: host, animated: true)
+            hud.removeFromSuperViewOnHide = true
+            hud.mode = .text
+            hud.animationType = .fade
+            hud.isUserInteractionEnabled = false
+            hud.label.numberOfLines = 2
+            hud.label.text = text
+            hud.offset = CGPoint(x: 0, y: -(host.bounds.height * 0.34))
+            hud.bezelView.style = .blur
+
+            switch self.toastLevel(for: text) {
+            case .success:
+                hud.contentColor = .systemGreen
+            case .error:
+                hud.contentColor = .systemRed
+            case .neutral:
+                hud.contentColor = .label
+            }
+
+            self.toastHUD = hud
+            hud.completionBlock = { [weak self, weak hud] in
+                guard let self = self else { return }
+                if self.toastHUD === hud {
+                    self.toastHUD = nil
+                }
+            }
+            hud.hide(animated: true, afterDelay: self.toastDuration)
+        }
+    }
+
+    func showLoading(text rawText: String) {
+        runOnMain { [weak self] in
+            guard let self = self else { return }
+            let normalized = self.normalizeText(rawText)
+            let text = normalized.isEmpty ? "请稍等..." : normalized
+
+            if let hud = self.loadingHUD {
+                hud.label.text = text
+                return
+            }
+
+            guard let host = self.hostView() else { return }
+            self.toastHUD?.hide(animated: false)
+            self.toastHUD = nil
+
+            let hud = MBProgressHUD.showAdded(to: host, animated: true)
+            hud.removeFromSuperViewOnHide = true
+            hud.mode = .indeterminate
+            hud.animationType = .fade
+            hud.graceTime = self.loadingGraceTime
+            hud.minShowTime = self.loadingMinShowTime
+            hud.isUserInteractionEnabled = false
+            hud.label.numberOfLines = 2
+            hud.label.text = text
+            hud.bezelView.style = .blur
+            self.loadingHUD = hud
+        }
+    }
+
+    func dismiss(after delay: Double) {
+        runOnMain { [weak self] in
+            guard let self = self else { return }
+            let dismissBlock = {
+                self.toastHUD?.hide(animated: true)
+                self.toastHUD = nil
+                self.loadingHUD?.hide(animated: true)
+                self.loadingHUD = nil
+                // 兼容历史调用链
+                SwiftEntryKit.dismiss()
+            }
+
+            if delay <= 0 {
+                dismissBlock()
+            } else {
+                DispatchQueue.main.asyncAfter(deadline: .now() + delay, execute: dismissBlock)
+            }
+        }
+    }
+
+    private func hostView() -> UIView? {
+        if #available(iOS 13.0, *) {
+            return UIApplication.shared.connectedScenes
+                .compactMap { $0 as? UIWindowScene }
+                .flatMap { $0.windows }
+                .first(where: { $0.isKeyWindow })
+        }
+        return UIApplication.shared.windows.first
+    }
+
+    private func toastLevel(for text: String) -> XYZHUDToastLevel {
+        let lower = text.lowercased()
+        if text.contains("失败")
+            || text.contains("错误")
+            || text.contains("无权限")
+            || text.contains("权限")
+            || lower.contains("error")
+            || lower.contains("fail")
+            || lower.contains("denied") {
+            return .error
+        }
+        if text.contains("成功")
+            || text.contains("已完成")
+            || text.contains("已发送")
+            || text.contains("已删除")
+            || text.contains("已更新")
+            || lower.contains("success")
+            || lower.contains("done") {
+            return .success
+        }
+        return .neutral
+    }
+
+    private func normalizeText(_ rawText: String) -> String {
+        var text = rawText.trimmingCharacters(in: .whitespacesAndNewlines)
+        if let debugStart = text.firstIndex(of: "[") {
+            let prefix = String(text[..<debugStart]).trimmingCharacters(in: .whitespacesAndNewlines)
+            if !prefix.isEmpty {
+                text = prefix
+            }
+        }
+        text = text.replacingOccurrences(of: "\n", with: " ")
+        while text.contains("  ") {
+            text = text.replacingOccurrences(of: "  ", with: " ")
+        }
+        if text.count > 64 {
+            text = String(text.prefix(64)) + "..."
+        }
+        return text
+    }
 }
 
 
